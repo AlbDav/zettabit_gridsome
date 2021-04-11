@@ -1,4 +1,5 @@
 <template>
+  <Layout>
     <article>
       <h1>{{ $page.post.title }} </h1>
 
@@ -16,6 +17,7 @@
 
       <div class="markdown-body mb-8" id="article-area" v-html="$page.post.content" />
     </article>
+  </Layout>
 </template>
 
 <page-query>

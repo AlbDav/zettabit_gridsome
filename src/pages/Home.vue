@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <Layout>
     <article v-for="post in $page.posts.edges" :key="post.id" >
       <h2><g-link :to="post.node.path" rel="bookmark">{{ post.node.title }}</g-link></h2>
       <p>Posted on <time :datetime="post.node.date">{{ post.node.date }}</time></p>
@@ -12,7 +12,7 @@
 
     <h2>Pagination</h2>
     <Pager :info="$page.posts.pageInfo"/>
-  </div>
+  </Layout>
 </template>
 
 <page-query>
