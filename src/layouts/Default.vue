@@ -6,7 +6,7 @@
 		  <button>
 			  <svg height="20" width="20"
   xmlns="http://www.w3.org/2000/svg">
-  <image href="https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png" height="20" width="20"/>
+  <image href="http://localhost:8080/logoZettabit_1.svg" height="20" width="20"/>
 </svg>
 
 		  </button>
