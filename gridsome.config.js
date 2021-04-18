@@ -4,6 +4,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const tailwindcss = require("tailwindcss");
+
 module.exports = {
   siteName: 'Zettabit',
   siteDescription: 'Zettabit, un semplice tech blog',
@@ -35,4 +37,13 @@ module.exports = {
       anchorClassName: 'icon icon-link',
     }
   },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [
+          tailwindcss
+        ],
+      },
+    },
+  }
 }

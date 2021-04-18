@@ -1,4 +1,5 @@
 <template>
+  <Layout>
     <article>
       <h1>Posts tagged {{ $page.tag.title }}</h1>
 
@@ -9,6 +10,7 @@
         </li>
       </ul>
     </article>
+  </Layout>
 </template>
 
 <page-query>
