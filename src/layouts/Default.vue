@@ -1,12 +1,22 @@
 <template>
   <div class="layout">
     <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
       <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
+        <g-link class="nav__link" to="/">
+		  <button>
+			  <svg height="20" width="20"
+  xmlns="http://www.w3.org/2000/svg">
+  <image href="https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png" height="20" width="20"/>
+</svg>
+
+		  </button>
+		</g-link>
+        <g-link class="nav__link" to="/home">
+		  <button>Home</button>
+		</g-link>
+        <g-link class="nav__link" to="/about/">
+		  <button>About</button>
+		</g-link>
       </nav>
     </header>
     <slot/>
@@ -44,7 +54,19 @@ body {
   height: 80px;
 }
 
-.nav__link {
-  margin-left: 20px;
+nav {
+	border-radius: 15px;
+	background: linear-gradient(145deg, #ba181b, #a4161a);
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+nav button{
+	padding: 0.75rem 1.25rem;
+	color: #d3d3d3;
+	font-weight: bold;
+}
+
+.nav__link:hover button, .nav__link.active--exact button {
+	color: white;
 }
 </style>
