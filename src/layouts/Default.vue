@@ -4,11 +4,7 @@
       <nav class="nav">
         <g-link class="nav__link" to="/">
 		  <button>
-			  <svg height="20" width="20"
-  xmlns="http://www.w3.org/2000/svg">
-  <image href="http://localhost:8080/logoZettabit_1.svg" height="20" width="20"/>
-</svg>
-
+			  <span class="icon-zettabit"></span>
 		  </button>
 		</g-link>
         <g-link class="nav__link" to="/home">
