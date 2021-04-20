@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <header class="header">
-      <nav class="nav">
+      <nav class="nav shadow-2xl">
         <g-link class="nav__link" to="/">
 		  <button>
 			  <span class="icon-zettabit"></span>
@@ -53,7 +53,7 @@ body {
 nav {
 	border-radius: 15px;
 	background: linear-gradient(145deg, #ba181b, #a4161a);
-	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+	/*box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);*/
 }
 
 nav button{
