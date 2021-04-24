@@ -27,7 +27,7 @@ module.exports = {
   ],
   templates: {
     Tag: '/tag/:id',
-    Post: '/content/:path',
+    Post: '/post/:path',
   },
   transformers: {
     remark: {

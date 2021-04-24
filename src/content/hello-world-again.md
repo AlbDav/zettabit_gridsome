@@ -1,8 +1,9 @@
 ---
+path: /hello-world-again
 title: Hello World
-path: /hello-world
-date: 2021-04-10
 summary: My first post
+image: ./images/prova.jpg
+date: 2021-04-10
 tags: ['hello']
 ---
 

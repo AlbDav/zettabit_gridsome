@@ -6,6 +6,7 @@
 
       <p>{{ post.node.summary }}</p>
       
+	  <g-image :src="post.node.image" />
       <div v-html="post.node.content">
       </div>
     </article>
@@ -31,6 +32,7 @@ query Posts ($page: Int) {
         summary
         path
         content
+		image
       }
     }
   }

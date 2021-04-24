@@ -12,6 +12,10 @@ module.exports = {
 				'2xl': '0px 10px 30px rgba(0, 0, 0, 0.3)'
 			}
 		},
+		gradientColorStops: theme => ({
+			'red-start': '#a4161a',
+			'red-end': '#ba181b'
+		})
 	},
 	variants: {
 		extend: {},
