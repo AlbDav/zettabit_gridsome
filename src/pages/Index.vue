@@ -1,20 +1,22 @@
 <template>
   <Layout>
-    <article v-for="post in topFive" :key="post.id" class="grid grid-cols-3 gap-3 h-80 rounded-xl border border-gray p-2 mt-2">
-      <div class="col-span-3">
-        <h2 class="text-red-light"><g-link :to="post.node.path" rel="bookmark">{{ post.node.title }}</g-link></h2>
-        <time :datetime="post.node.date">{{ post.node.date }}</time>
+    <article class="grid grid-cols-3 gap-3 h-96 rounded-xl p-2 mt-2">
+      <div class="col-span-3 min-h-0 min-w-0">
+        <h2 class="text-red-light">{{ currentPost.title }}</h2>
+        <time :datetime="currentPost.date">{{ currentPost.date }}</time>
 	  </div>
-	  <div class="col-span-2 mr-1 rounded-xl overflow-hidden shadow">
-	    <g-image :src="post.node.image" class="object-cover h-full w-full" />
+	  <div class="col-span-2 mr-1 rounded-xl overflow-hidden shadow-md min-h-0 min-w-0">
+	    <g-image :src="currentPost.image" class="object-cover h-full w-full" />
 	  </div>
-	  <div class="flex flex-col">
-        <p class="flex-shrink mt-3 overflow-ellipsis overflow-hidden">{{ post.node.summary }}</p>
+	  <div class="flex flex-col min-h-0 min-w-0">
+        <p class="flex-shrink mb-3 overflow-ellipsis overflow-hidden">{{ currentPost.summary }}</p>
 	    <div class="flex items-end justify-end">
-		  <button class="px-6
+		  <g-link :to="currentPost.path" rel="bookmark" class="w-full">
+			  <button class="px-6
 		  				 py-2
+						 w-full
 						 rounded-xl
-						 shadow-lg
+						 shadow-md
 						 active:shadow
 						 bg-gradient-to-tl
 						 from-red-light
@@ -22,11 +24,12 @@
 						 hover:from-red
 						 hover:to-red-light
 						 text-white">Leggi</button>
+		  </g-link>
 	    </div>
 	  </div>
     </article>
 
-	<div class="rounded-xl shadow-md bg-gradient-to-tl from-gray-light to-gray-lighter mt-2 flex overflow-hidden">
+	<div class="rounded-xl shadow-md bg-gradient-to-tl from-gray-light to-gray-lighter mt-3 flex overflow-hidden">
 		<button v-for="(post, i) in topFive"
 			 :key="post.id"
 			 class="h-24 flex-grow p-2 bg-gradient-to-t"
@@ -93,14 +96,17 @@ export default {
 	  topFive() {
 		  return this.multiplePosts.slice(0, 5);
 	  },
+	  currentPost() {
+		  return this.topFive[this.counter].node;
+	  }
   },
   methods: {
 	  highlighted(i) {
 		  if (i === this.counter) {
 			  return {
-				  'from-gray-dark': true,
-				  'to-gray-dark': true,
-				  'via-gray': true
+				  'from-red-lighter': true,
+				  'to-red-light': true,
+				  'shadow-inner': true
 			  }
 		  } else {
 			  return {

@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <header class="header">
-      <nav class="nav shadow-2xl bg-gradient-to-tl from-red-light to-red-lighter rounded-xl">
+      <nav class="nav shadow-lg bg-gradient-to-tl from-red-light to-red-lighter rounded-xl w-full">
         <g-link class="nav__link" to="/">
 		  <button>
 			  <span class="icon-zettabit"></span>
@@ -33,6 +33,8 @@ body {
   margin:0;
   padding:0;
   line-height: 1.5;
+  overflow-y: scroll;
+  background-color: #fefefe;
 }
 
 .layout {
@@ -46,7 +48,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
   height: 80px;
 }
 

@@ -23,9 +23,6 @@ module.exports = {
 					darkest: '#0b090a'
 				}
 			},
-			boxShadow: {
-				'2xl': '0px 10px 30px rgba(0, 0, 0, 0.3)'
-			}
 		},
 	},
 	variants: {
