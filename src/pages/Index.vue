@@ -1,16 +1,16 @@
 <template>
   <Layout>
-    <article v-for="post in topFive" :key="post.id" class="flex h-80 rounded-xl border border-gray p-2 mt-2">
-	  <div class="w-2/3 h-full mr-1 rounded-xl overflow-hidden shadow">
+    <article v-for="post in topFive" :key="post.id" class="grid grid-cols-3 gap-3 h-80 rounded-xl border border-gray p-2 mt-2">
+      <div class="col-span-3">
+        <h2 class="text-red-light"><g-link :to="post.node.path" rel="bookmark">{{ post.node.title }}</g-link></h2>
+        <time :datetime="post.node.date">{{ post.node.date }}</time>
+	  </div>
+	  <div class="col-span-2 mr-1 rounded-xl overflow-hidden shadow">
 	    <g-image :src="post.node.image" class="object-cover h-full w-full" />
 	  </div>
-	  <div class="w-1/3 h-full ml-1 flex flex-col">
-	    <div class="h-3/4">
-          <h2 class="text-red-light"><g-link :to="post.node.path" rel="bookmark">{{ post.node.title }}</g-link></h2>
-          <time :datetime="post.node.date">{{ post.node.date }}</time>
-          <p class="h-1/2 mt-3 overflow-ellipsis overflow-hidden">{{ post.node.summary }}</p>
-		</div>
-	    <div class="h-1/4 flex items-end justify-end">
+	  <div class="flex flex-col">
+        <p class="flex-shrink mt-3 overflow-ellipsis overflow-hidden">{{ post.node.summary }}</p>
+	    <div class="flex items-end justify-end">
 		  <button class="px-6
 		  				 py-2
 						 rounded-xl
