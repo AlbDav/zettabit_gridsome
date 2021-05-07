@@ -1,14 +1,14 @@
 <template>
   <Layout>
-    <article class="grid grid-cols-3 gap-3 h-96 rounded-xl p-2 mt-2">
+    <article class="grid grid-cols-3 gap-3 h-96 rounded-xl p-1 mt-2">
       <div class="col-span-3 min-h-0 min-w-0">
         <h2 class="text-red-light">{{ currentPost.title }}</h2>
         <time :datetime="currentPost.date">{{ currentPost.date }}</time>
 	  </div>
-	  <div class="col-span-2 mr-1 rounded-xl overflow-hidden shadow-md min-h-0 min-w-0">
+	  <div class="sm:col-span-2 col-span-3 mr-1 rounded-xl overflow-hidden shadow-md min-h-0 min-w-0">
 	    <g-image :src="currentPost.image" class="object-cover h-full w-full" />
 	  </div>
-	  <div class="flex flex-col min-h-0 min-w-0">
+	  <div class="sm:col-span-1 col-span-3 flex flex-col min-h-0 min-w-0">
         <p class="flex-shrink mb-3 overflow-ellipsis overflow-hidden">{{ currentPost.summary }}</p>
 	    <div class="flex items-end justify-end">
 		  <g-link :to="currentPost.path" rel="bookmark" class="w-full">
@@ -29,8 +29,8 @@
 	  </div>
     </article>
 
-	<div class="rounded-xl shadow-md bg-gradient-to-tl from-gray-light to-gray-lighter mt-3 flex overflow-hidden">
-		<button v-for="(post, i) in topFive"
+	<div class="rounded-xl shadow-md bg-gradient-to-tl from-gray-light to-gray-lighter mt-5 flex overflow-hidden">
+		<button v-for="(post, i) in topPosts"
 			 :key="post.id"
 			 class="h-24 flex-grow p-2 bg-gradient-to-t"
 			 :class="highlighted(i)"
@@ -93,11 +93,17 @@ export default {
 		  }
 		  return posts.flat();
 	  },
-	  topFive() {
-		  return this.multiplePosts.slice(0, 5);
+	  carouselNum() {
+		  return this.$screen.sm ? 5 : 3;
+	  },
+	  topPosts() {
+		  return this.multiplePosts.slice(0, this.carouselNum);
+	  },
+	  otherPosts() {
+		  return this.multiplePosts.slice(this.carouselNum);
 	  },
 	  currentPost() {
-		  return this.topFive[this.counter].node;
+		  return this.topPosts[this.counter].node;
 	  }
   },
   methods: {
@@ -122,11 +128,16 @@ export default {
 	  },
 	  startTimer() {
 	    this.timer = setInterval(() => {
-		    this.counter = (this.counter + 1) % 5;
+		    this.counter = (this.counter + 1) % this.carouselNum;
 	    }, 3000);
 	  },
 	  stopTimer() {
 		  clearInterval(this.timer);
+	  }
+  },
+  watch: {
+	  carouselNum() {
+		  this.selectPost(0);
 	  }
   },
   created() {
