@@ -1,4 +1,5 @@
 ---
 id: apps
-description: ciao
+description: 
+image: ./images/home.jpg
 ---
