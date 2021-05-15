@@ -7,22 +7,27 @@
 </template>
 
 <page-query>
-query Posts ($page: Int) {
-  posts: allPost (sortBy: "date", order: DESC, perPage: 10, page: $page) @paginate {
-    totalCount
-    pageInfo {
-      totalPages
-      currentPage
-    }
-    edges {
-      node {
-        id
-        title
-        date (format: "D MMMM YYYY", locale: "it")
-        summary
-        path
-        content
-		image
+query Category ($id: ID!, $page: Int) {
+  category: category (id: $id) {
+    title
+    belongsTo (page: $page, perPage: 30) @paginate {
+      totalCount
+      pageInfo {
+        totalPages
+        currentPage
+      }
+      edges {
+        node {
+          ...on Post {
+              id
+              title
+              date (format: "D MMMM YYYY", locale: "it")
+              summary
+              path
+              content
+		      image
+          }
+        }
       }
     }
   }
@@ -36,8 +41,8 @@ import ArticlePreview from "../components/ArticlePreview.vue";
 export default {
   computed: {
     posts() {
-      if (this.$page.posts.edges) {
-        return this.$page.posts.edges;
+      if (this.$page.category.belongsTo.edges) {
+        return this.$page.category.belongsTo.edges;
       } else {
         return [];
       }
@@ -69,6 +74,14 @@ export default {
   },
   metaInfo: {
     title: "View my blog posts",
+  },
+  created() {
+    console.log(this.$page.category);
+  },
+  metaInfo() {
+    return {
+      title: `Category: ${this.$page.category.title}`,
+    };
   },
 };
 </script>

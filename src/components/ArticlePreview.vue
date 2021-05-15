@@ -1,7 +1,7 @@
 <template>
-  <article class="grid grid-cols-3 gap-3 h-96 sm:h-64 rounded-xl p-1 mt-4">
-    <div class="col-span-3 min-h-0 min-w-0">
-      <hr class="w-4/5 mx-auto mb-1" />
+  <article class="grid grid-cols-3 gap-x-3 gap-y-1 h-96 sm:h-64 p-1 mt-4">
+    <div class="col-span-3 min-h-0 min-w-0 mx-1">
+      <hr class="w-4/5 mx-auto" />
       <h2 class="text-red-light">{{ post.node.title }}</h2>
       <time :datetime="post.node.date">{{ post.node.date }}</time>
     </div>
