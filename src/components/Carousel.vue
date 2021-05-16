@@ -11,9 +11,9 @@
         <g-image :src="currentPost.image" class="object-cover h-full w-full" />
       </div>
       <div class="sm:col-span-1 col-span-3 flex flex-col min-h-0 min-w-0">
-        <p class="flex-shrink mb-3 overflow-ellipsis overflow-hidden">
+        <v-clamp autoresize :max-height="'100%'" class="flex-shrink mb-3 overflow-ellipsis overflow-hidden mx-1">
           {{ currentPost.summary }}
-        </p>
+        </v-clamp>
         <div class="flex items-end justify-end">
           <g-link :to="currentPost.path" rel="bookmark" class="w-full">
             <button
@@ -47,6 +47,8 @@
 </template>
 
 <script>
+import VClamp from 'vue-clamp';
+
 export default {
   props: ["topPosts", "carouselNum"],
   data() {
@@ -101,5 +103,8 @@ export default {
   created() {
     this.startTimer();
   },
+  components: {
+	  VClamp
+  }
 };
 </script>

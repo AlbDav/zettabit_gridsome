@@ -1,7 +1,7 @@
 <template>
-  <article class="grid grid-cols-3 gap-x-3 gap-y-1 h-96 sm:h-64 p-1 mt-4">
+  <article class="grid grid-cols-3 gap-x-3 gap-y-1 h-96 sm:h-64 p-1">
     <div class="col-span-3 min-h-0 min-w-0 mx-1">
-      <hr class="w-4/5 mx-auto" />
+      <hr class="w-4/5 mx-auto my-3" />
       <h2 class="text-red-light">{{ post.node.title }}</h2>
       <time :datetime="post.node.date">{{ post.node.date }}</time>
     </div>
@@ -11,9 +11,9 @@
       <g-image :src="post.node.image" class="object-cover h-full w-full" />
     </div>
     <div class="sm:col-span-2 col-span-3 flex flex-col min-h-0 min-w-0">
-      <p class="flex-shrink mb-3 overflow-ellipsis overflow-hidden">
+      <v-clamp autoresize :max-height="'100%'" class="flex-shrink mb-3 overflow-ellipsis overflow-hidden mx-1">
         {{ post.node.summary }}
-      </p>
+      </v-clamp>
       <div class="flex items-end justify-end">
         <g-link :to="post.node.path" rel="bookmark" class="w-full">
           <button
@@ -28,7 +28,12 @@
 </template>
 
 <script>
+import VClamp from 'vue-clamp';
+
 export default {
-	props: ['post']
+	props: ['post'],
+	components: {
+		VClamp
+	}
 }
 </script>

@@ -7,8 +7,8 @@
 			  <span class="icon-zettabit"></span>
 		  </button>
 		</g-link>
-        <g-link class="nav__link" to="/home">
-		  <button>Home</button>
+        <g-link class="nav__link" to="/categories">
+		  <button>Categories</button>
 		</g-link>
         <g-link class="nav__link" to="/about/">
 		  <button>About</button>

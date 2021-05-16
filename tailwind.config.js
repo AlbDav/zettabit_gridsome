@@ -23,6 +23,10 @@ module.exports = {
 					darkest: '#0b090a'
 				}
 			},
+			gridTemplateColumns: {
+				'auto-fit': 'repeat(auto-fit, minmax(10rem, 1fr))',
+				'auto-fill': 'repeat(auto-fill, minmax(10rem, 1fr))',
+			},
 		},
 	},
 	variants: {
@@ -32,4 +36,4 @@ module.exports = {
 		},
 	},
 	plugins: [],
-};	
+};
