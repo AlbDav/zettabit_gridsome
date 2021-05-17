@@ -51,12 +51,6 @@ body {
   height: 80px;
 }
 
-nav {
-	/*border-radius: 15px;
-	/*background: linear-gradient(145deg, #ba181b, #a4161a);
-	/*box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);*/
-}
-
 nav button{
 	padding: 0.75rem 1.25rem;
 	color: #d3d3d3;

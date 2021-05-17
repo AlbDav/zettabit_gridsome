@@ -37,7 +37,7 @@ module.exports = {
   ],
   templates: {
     Post: '/post/:path',
-	Category: '/category/:id',
+	Category: '/categories/:id',
     Tag: '/tag/:id',
   },
   transformers: {
