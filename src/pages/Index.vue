@@ -63,6 +63,9 @@ export default {
       return this.multiplePosts.slice(sliceNum);
     },
   },
+  created() {
+	  console.log(this.posts);
+  },
   components: {
     Carousel,
     ArticlePreview,

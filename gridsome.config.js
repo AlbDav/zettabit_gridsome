@@ -36,9 +36,9 @@ module.exports = {
     },
   ],
   templates: {
-    Post: '/post/:path',
-	Category: '/categories/:id',
-    Tag: '/tag/:id',
+    Post: '/posts/:path',
+	Category: '/categories/:path',
+    Tag: '/tags/:id',
   },
   transformers: {
     remark: {

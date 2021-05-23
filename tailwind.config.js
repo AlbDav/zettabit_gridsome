@@ -32,7 +32,8 @@ module.exports = {
 	variants: {
 		extend: {
 			boxShadow: ['active'],
-			gradientColorStops: ['active']
+			gradientColorStops: ['active'],
+			textColor: ['active'],
 		},
 	},
 	plugins: [],
