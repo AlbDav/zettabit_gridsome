@@ -14,20 +14,31 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'src/content/**/*.md',
+        path: 'src/content/posts/**/*.md',
         typeName: 'Post',
         refs: {
           tags: {
             typeName: 'Tag',
-            create: true
+			create: true
           },
+		  categories: {
+			  typeName: 'Category'
+		  }
         }
       }
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'src/content/categories/**/*.md',
+        typeName: 'Category',
+        }
+    },
   ],
   templates: {
-    Tag: '/tag/:id',
-    Post: '/content/:path',
+    Post: '/posts/:path',
+	Category: '/categories/:path',
+    Tag: '/tags/:id',
   },
   transformers: {
     remark: {
