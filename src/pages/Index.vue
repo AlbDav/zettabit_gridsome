@@ -1,8 +1,10 @@
 <template>
   <Layout>
-    <carousel :topPosts="topPosts" :carouselNum="carouselNum" />
+    <ClientOnly>
+      <carousel :topPosts="topPosts" :carouselNum="carouselNum" />
 
-    <article-preview v-for="post in otherPosts" :key="post.id" :post="post" />
+      <article-preview v-for="post in otherPosts" :key="post.id" :post="post" />
+    </ClientOnly>
   </Layout>
 </template>
 
@@ -64,7 +66,7 @@ export default {
     },
   },
   created() {
-	  console.log(this.posts);
+    console.log(this.posts);
   },
   components: {
     Carousel,
