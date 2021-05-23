@@ -1,12 +1,18 @@
 <template>
   <div class="layout">
     <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
+      <nav class="nav shadow-lg bg-gradient-to-tl from-red-light to-red-lighter rounded-xl w-full">
+        <g-link class="nav__link" to="/">
+		  <button>
+			  <span class="icon-zettabit"></span>
+		  </button>
+		</g-link>
+        <g-link class="nav__link" to="/categories">
+		  <button>Categories</button>
+		</g-link>
+        <g-link class="nav__link" to="/about/">
+		  <button>About</button>
+		</g-link>
       </nav>
     </header>
     <slot/>
@@ -27,10 +33,12 @@ body {
   margin:0;
   padding:0;
   line-height: 1.5;
+  overflow-y: scroll;
+  background-color: #fefefe;
 }
 
 .layout {
-  max-width: 760px;
+  max-width: 900px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -40,11 +48,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
   height: 80px;
 }
 
-.nav__link {
-  margin-left: 20px;
+nav button{
+	padding: 0.75rem 1.25rem;
+	color: #d3d3d3;
+	font-weight: bold;
+}
+
+.nav__link:hover button, .nav__link.active--exact button {
+	color: white;
 }
 </style>

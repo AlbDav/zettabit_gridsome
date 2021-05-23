@@ -4,6 +4,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const tailwindcss = require("tailwindcss");
+
 module.exports = {
   siteName: 'Zettabit',
   siteDescription: 'Zettabit, un semplice tech blog',
@@ -12,20 +14,31 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'src/content/**/*.md',
+        path: 'src/content/posts/**/*.md',
         typeName: 'Post',
         refs: {
           tags: {
             typeName: 'Tag',
-            create: true
+			create: true
           },
+		  categories: {
+			  typeName: 'Category'
+		  }
         }
       }
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'src/content/categories/**/*.md',
+        typeName: 'Category',
+        }
+    },
   ],
   templates: {
-    Tag: '/tag/:id',
-    Post: '/content/:path',
+    Post: '/posts/:path',
+	Category: '/categories/:path',
+    Tag: '/tags/:id',
   },
   transformers: {
     remark: {
@@ -35,4 +48,13 @@ module.exports = {
       anchorClassName: 'icon icon-link',
     }
   },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [
+          tailwindcss
+        ],
+      },
+    },
+  }
 }

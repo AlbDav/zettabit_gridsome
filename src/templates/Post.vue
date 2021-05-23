@@ -1,33 +1,31 @@
 <template>
-    <article>
-      <h1>{{ $page.post.title }} </h1>
-
-      <div>
-        Tags:
-        <g-link
-            v-for="tag in $page.post.tags"
-            :to="tag.path"
-            :key="tag.id">
-          #{{ tag.title }}
-        </g-link>
+  <Layout>
+    <article class="grid grid-cols-1 gap-3 rounded-xl px-2 mt-1">
+      <div class="min-h-0 min-w-0 mx-1">
+        <h2 class="text-red-light">{{ $page.post.title }}</h2>
+        <time :datetime="$page.post.date">{{ $page.post.date }}</time>
+      </div>
+      <div
+        class="mr-1 rounded-xl overflow-hidden shadow-md min-h-0 min-w-0 h-48 sm:h-96"
+      >
+        <g-image :src="$page.post.image" class="object-cover h-full w-full" />
       </div>
 
-      <p>Posted on {{ $page.post.date }}</p>
-
-      <div class="markdown-body mb-8" id="article-area" v-html="$page.post.content" />
+      <div class="mb-8 mx-1" id="article-area" v-html="$page.post.content" />
     </article>
+  </Layout>
 </template>
 
 <page-query>
 query Post ($path: String!) {
   post: post (path: $path) {
-    title
-    date (format: "MMMM D, Y")
-    content
-    tags {
+      id
       title
+      date (format: "D MMMM YYYY", locale: "it")
+      summary
       path
-    }
+      content
+	  image
   }
 }
 </page-query>
