@@ -4,8 +4,8 @@
       <g-link
         v-for="category in $page.categories.edges"
         :key="category.node.id"
-		:to="'/categories/' + category.node.id"
-		rel="bookmark"
+        :to="category.node.path"
+        rel="bookmark"
         class="mx-auto w-11/12 sm:w-10/12"
       >
         <button
@@ -32,8 +32,17 @@ query Categories ($page: Int) {
 		id
         title
         image
+		path
       }
     }
   }
 }
 </page-query>
+
+<script>
+export default {
+  created() {
+    console.log(this.$page.categories);
+  },
+};
+</script>

@@ -9,8 +9,8 @@
 </template>
 
 <page-query>
-query Category ($id: ID!, $page: Int) {
-  category: category (id: $id) {
+query Category ($path: String!, $page: Int) {
+  category: category (path: $path) {
     title
     belongsTo (page: $page, perPage: 30) @paginate {
       totalCount
