@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <article class="grid grid-cols-1 gap-3 rounded-xl px-2 mt-1">
+    <article class="grid grid-cols-1 gap-3 rounded-xl mx-4 mt-1">
       <div class="min-h-0 min-w-0 mx-1">
         <h2 class="text-red-light">{{ $page.post.title }}</h2>
         <time :datetime="$page.post.date">{{ $page.post.date }}</time>
