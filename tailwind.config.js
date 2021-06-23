@@ -6,7 +6,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Lato', ...defaultTheme.fontFamily.sans],
+				sans: ['Inter', ...defaultTheme.fontFamily.sans],
 			},
 			colors: {
 				red: {
@@ -26,6 +26,9 @@ module.exports = {
 			gridTemplateColumns: {
 				'auto-fit': 'repeat(auto-fit, minmax(10rem, 1fr))',
 				'auto-fill': 'repeat(auto-fill, minmax(10rem, 1fr))',
+			},
+			boxShadow: {
+				lg: '0 5px 20px 0 rgba(0, 0, 0, 0.1)'
 			},
 		},
 	},

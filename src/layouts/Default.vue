@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <header class="header">
-      <nav class="nav shadow-lg bg-gradient-to-tl from-red-light to-red-lighter rounded-xl w-full">
+      <nav class="nav shadow-lg rounded-xl w-full bg-white">
         <g-link class="nav__link" to="/">
 		  <button>
 			  <span class="icon-zettabit"></span>
@@ -34,7 +34,8 @@ body {
   padding:0;
   line-height: 1.5;
   overflow-y: scroll;
-  background-color: #fefefe;
+  @apply bg-gray-50;
+  @apply text-gray-800;
 }
 
 .layout {
@@ -53,11 +54,10 @@ body {
 
 nav button{
 	padding: 0.75rem 1.25rem;
-	color: #d3d3d3;
 	font-weight: bold;
 }
 
 .nav__link:hover button, .nav__link.active--exact button {
-	color: white;
+	@apply text-red-700;
 }
 </style>
