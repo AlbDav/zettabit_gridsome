@@ -2,22 +2,20 @@
   <div class="layout">
     <header class="header">
       <nav class="nav shadow-lg rounded-xl w-full bg-white">
-        <div>
-          <g-link class="nav__link" to="/">
-            <button>
-              <span class="icon-zettabit"></span>
-            </button>
-          </g-link>
-          <g-link class="nav__link" to="/categories">
-            <button>Categories</button>
-          </g-link>
-          <g-link class="nav__link" to="/about/">
-            <button>About</button>
-          </g-link>
-        </div>
+        <g-link class="nav__link" to="/">
+		  <button>
+			  <span class="icon-zettabit"></span>
+		  </button>
+		</g-link>
+        <g-link class="nav__link" to="/categories">
+		  <button>Categories</button>
+		</g-link>
+        <g-link class="nav__link" to="/about/">
+		  <button>About</button>
+		</g-link>
       </nav>
     </header>
-    <slot />
+    <slot/>
   </div>
 </template>
 
@@ -31,10 +29,9 @@ query {
 
 <style>
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  margin:0;
+  padding:0;
   line-height: 1.5;
   overflow-y: scroll;
   @apply bg-gray-50;
@@ -55,27 +52,12 @@ body {
   height: 80px;
 }
 
-<<<<<<< Updated upstream
 nav button{
 	padding: 0.75rem 1.25rem;
 	font-weight: bold;
 }
 
 .nav__link:hover button, .nav__link.active--exact button {
-<<<<<<< feature/basicUI
 	@apply text-red-700;
-=======
-	color: white;
-=======
-nav button {
-  padding: 0.75rem 1.25rem;
-  font-weight: bold;
-}
-
-.nav__link:hover button,
-.nav__link.active--exact button {
-  @apply text-red-700;
->>>>>>> Stashed changes
->>>>>>> added flex search
 }
 </style>

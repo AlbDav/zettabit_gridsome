@@ -67,7 +67,6 @@ export default {
   },
   created() {
     console.log(this.posts);
-	console.log(this.$search.search('Some c'));
   },
   components: {
     Carousel,
