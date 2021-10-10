@@ -1,6 +1,6 @@
 <template>
   <Layout>
-	  <main-article :post="topPosts[3]"
+	  <main-article :post="topPosts[0]"
 	  />
 <!--     <ClientOnly>
       <carousel :topPosts="topPosts" :carouselNum="carouselNum" />

@@ -26,8 +26,18 @@ export default {
 			mainTitleHeight: 0
 		}
 	},
+	methods: {
+		setImageHeight() {
+			this.mainTitleHeight = this.$refs.mainTitle.clientHeight;
+		}
+	},
+	watch: {
+		'$screen.width'() {
+			this.setImageHeight();
+		}
+	},
 	mounted() {
-		this.mainTitleHeight = this.$refs.mainTitle.clientHeight;
-	}
+		this.setImageHeight();
+	},
 }
 </script>
