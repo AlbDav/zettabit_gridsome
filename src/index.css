@@ -5,6 +5,14 @@
 @tailwind utilities;
 
 @layer base {
+	body {
+	  margin:0;
+	  padding:0;
+	  line-height: 1.5;
+	  overflow-y: scroll;
+	  @apply bg-gray-50;
+	  @apply text-gray-800;
+	}
 	h1 {
 		@apply text-4xl;
 		@apply font-bold;

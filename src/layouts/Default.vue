@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <header class="header">
+    <header class="header mx-auto w-10/12">
       <nav class="nav shadow-lg rounded-xl w-full bg-white">
         <g-link class="nav__link" to="/">
 		  <button>
@@ -27,22 +27,9 @@ query {
 }
 </static-query>
 
-<style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-  overflow-y: scroll;
-  @apply bg-gray-50;
-  @apply text-gray-800;
-}
-
+<style scoped>
 .layout {
-  max-width: 900px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .header {

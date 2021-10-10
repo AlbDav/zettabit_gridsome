@@ -1,10 +1,12 @@
 <template>
   <Layout>
-    <ClientOnly>
+	  <main-article :post="topPosts[3]"
+	  />
+<!--     <ClientOnly>
       <carousel :topPosts="topPosts" :carouselNum="carouselNum" />
 
       <article-preview v-for="post in otherPosts" :key="post.id" :post="post" />
-    </ClientOnly>
+    </ClientOnly> -->
   </Layout>
 </template>
 
@@ -34,6 +36,7 @@ query Posts ($page: Int) {
 <script>
 import Carousel from "../components/Carousel.vue";
 import ArticlePreview from "../components/ArticlePreview.vue";
+import MainArticle from "../components/MainArticle.vue";
 
 export default {
   computed: {
@@ -71,6 +74,7 @@ export default {
   components: {
     Carousel,
     ArticlePreview,
+	MainArticle
   },
   metaInfo: {
     title: "View my blog posts",
