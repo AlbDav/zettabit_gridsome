@@ -1,7 +1,8 @@
 <template>
   <div class="layout">
-    <header class="header mx-auto w-10/12">
-      <nav class="nav shadow-lg rounded-xl w-full bg-white">
+    <header class="header fixed top-0 left-0 w-full z-50">
+      <nav class="nav mx-auto w-10/12 shadow-lg rounded-xl
+	              bg-white glass-effect">
         <g-link class="nav__link" to="/">
 		  <button>
 			  <span class="icon-zettabit"></span>
@@ -15,7 +16,9 @@
 		</g-link>
       </nav>
     </header>
-    <slot/>
+	<div class="content">
+      <slot/>
+	</div>
   </div>
 </template>
 
@@ -39,6 +42,11 @@ query {
   height: 80px;
 }
 
+.glass-effect {
+	opacity: 0.9;
+	backdrop-filter: blur(10px);
+}
+
 nav button{
 	padding: 0.75rem 1.25rem;
 	font-weight: bold;
@@ -46,5 +54,9 @@ nav button{
 
 .nav__link:hover button, .nav__link.active--exact button {
 	@apply text-red-700;
+}
+
+.content{
+	margin-top: 80px;
 }
 </style>
