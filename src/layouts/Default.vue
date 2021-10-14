@@ -1,8 +1,8 @@
 <template>
   <div class="layout">
     <header class="header fixed top-0 left-0 w-full z-50">
-      <nav class="nav mx-auto w-10/12 shadow-lg rounded-xl
-	              bg-white glass-effect">
+      <nav class="nav mx-auto w-11/12 sm:w-10/12 shadow-lg rounded-xl
+	              glass-effect">
         <g-link class="nav__link" to="/">
 		  <button>
 			  <span class="icon-zettabit"></span>
@@ -42,9 +42,10 @@ query {
   height: 80px;
 }
 
-.glass-effect {
-	opacity: 0.9;
-	backdrop-filter: blur(10px);
+.glass-effect { 
+	background: rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 nav button{
