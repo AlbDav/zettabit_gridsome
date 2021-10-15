@@ -10,13 +10,14 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-flexsearch": "^2.0.2",
     "vue-clamp": "^0.3.2",
     "vue-screen": "^1.5.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.1.0",
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0"
+    "autoprefixer": "^9.8.7",
+    "postcss": "^7.0.38",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16"
   }
 }

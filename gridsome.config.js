@@ -34,6 +34,19 @@ module.exports = {
         typeName: 'Category',
         }
     },
+	{
+		use: 'gridsome-plugin-flexsearch',
+		options: {
+			searchFields: ['title', 'summary', 'content'],
+			collections: [
+				{
+					typeName: 'Post',
+					indexName: 'Post',
+					fields: ['title', 'summary']
+				}
+			]
+		}
+	},
   ],
   templates: {
     Post: '/posts/:path',
