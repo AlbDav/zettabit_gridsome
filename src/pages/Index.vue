@@ -1,10 +1,14 @@
 <template>
   <Layout>
-    <ClientOnly>
+	  <main-article :post="topPosts[0]"
+	  />
+<!--     <ClientOnly>
       <carousel :topPosts="topPosts" :carouselNum="carouselNum" />
 
       <article-preview v-for="post in otherPosts" :key="post.id" :post="post" />
-    </ClientOnly>
+    </ClientOnly> -->
+     <article-grid class="mt-3" :posts="posts"
+	 />
   </Layout>
 </template>
 
@@ -34,6 +38,8 @@ query Posts ($page: Int) {
 <script>
 import Carousel from "../components/Carousel.vue";
 import ArticlePreview from "../components/ArticlePreview.vue";
+import MainArticle from "../components/MainArticle.vue";
+import ArticleGrid from "../components/ArticleGrid.vue";
 
 export default {
   computed: {
@@ -71,6 +77,8 @@ export default {
   components: {
     Carousel,
     ArticlePreview,
+	MainArticle,
+	ArticleGrid
   },
   metaInfo: {
     title: "View my blog posts",

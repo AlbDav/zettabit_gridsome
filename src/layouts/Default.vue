@@ -1,7 +1,8 @@
 <template>
   <div class="layout">
-    <header class="header">
-      <nav class="nav shadow-lg rounded-xl w-full bg-white">
+    <header class="header fixed top-0 left-0 w-full z-50">
+      <nav class="nav mx-auto w-11/12 sm:w-10/12 shadow-lg rounded-xl
+	              glass-effect">
         <g-link class="nav__link" to="/">
 		  <button>
 			  <span class="icon-zettabit"></span>
@@ -15,7 +16,9 @@
 		</g-link>
       </nav>
     </header>
-    <slot/>
+	<div class="content">
+      <slot/>
+	</div>
   </div>
 </template>
 
@@ -27,22 +30,9 @@ query {
 }
 </static-query>
 
-<style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-  overflow-y: scroll;
-  @apply bg-gray-50;
-  @apply text-gray-800;
-}
-
+<style scoped>
 .layout {
-  max-width: 900px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .header {
@@ -52,6 +42,12 @@ body {
   height: 80px;
 }
 
+.glass-effect { 
+	background: rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 nav button{
 	padding: 0.75rem 1.25rem;
 	font-weight: bold;
@@ -59,5 +55,9 @@ nav button{
 
 .nav__link:hover button, .nav__link.active--exact button {
 	@apply text-red-700;
+}
+
+.content{
+	margin-top: 80px;
 }
 </style>

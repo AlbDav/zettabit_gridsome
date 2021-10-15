@@ -28,6 +28,7 @@ module.exports = {
 				'auto-fill': 'repeat(auto-fill, minmax(10rem, 1fr))',
 			},
 			boxShadow: {
+				md: '0 4px 15px 0 rgba(0, 0, 0, 0.1)',
 				lg: '0 5px 20px 0 rgba(0, 0, 0, 0.1)'
 			},
 		},
