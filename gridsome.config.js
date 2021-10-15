@@ -58,11 +58,11 @@ module.exports = {
 		  relatedFieldName: 'related',
 		  referenceRelatedFieldName: 'related',
 		  caseSensitive: false,
-		  minScore: 0.5,
+		  minScore: 0.3,
 		  maxScore: 1,
-		  minRelations:3,
-		  maxRelations: 10,
-		  fillWithRandom:false,
+		  minRelations: 7,
+		  maxRelations: 7,
+		  fillWithRandom: true,
 		  debug: false
 		}
 	  }
