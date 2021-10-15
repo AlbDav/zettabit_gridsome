@@ -45,7 +45,17 @@ export default {
   computed: {
     posts() {
       if (this.$page.posts.edges) {
-        return this.$page.posts.edges;
+        return this.$page.posts.edges.map(el => {
+			return {
+				id: el.node.id,
+				title: el.node.title,
+				date: el.node.title,
+				summary: el.node.summary,
+				path: el.node.path,
+				content: el.node.content,
+				image: el.node.image,
+			}
+		});
       } else {
         return [];
       }
