@@ -11,6 +11,7 @@
     "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.0",
     "gridsome-plugin-flexsearch": "^2.0.2",
+    "gridsome-plugin-recommender": "^1.1.5",
     "vue-clamp": "^0.3.2",
     "vue-screen": "^1.5.4"
   },
