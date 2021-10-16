@@ -15,22 +15,11 @@
           left-0
         "
       >
-        <g-link :to="post.path">
-          <div
-            class="
-              bg-white
-              w-full
-              sm:w-1/2
-              p-5
-              my-9
-              rounded-xl
-              shadow-md
-              main-card
-            "
-          >
+        <g-link :to="post.path" class="w-full sm:w-1/2">
+          <div class="bg-white w-full p-5 my-9 rounded-xl shadow-md main-card">
             <h1>{{ post.title }}</h1>
             <time :datetime="post.date">{{ post.date }}</time>
-            <p>{{ post.sbtitle }}</p>
+            <p>{{ post.subtitle }}</p>
           </div>
         </g-link>
       </div>
