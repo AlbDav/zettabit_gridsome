@@ -5,15 +5,15 @@
 	              glass-effect">
         <g-link class="nav__link" to="/">
 		  <button>
-			  <span class="icon-zettabit"></span>
+			  <span class="icon-zettabit text-red-700"></span>
 		  </button>
 		</g-link>
         <g-link class="nav__link" to="/categories">
-		  <button>Categories</button>
+		  <button>Categorie</button>
 		</g-link>
-        <g-link class="nav__link" to="/about/">
+<!--         <g-link class="nav__link" to="/about/">
 		  <button>About</button>
-		</g-link>
+		</g-link> -->
       </nav>
     </header>
 	<div class="content">

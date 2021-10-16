@@ -13,7 +13,7 @@
 		</div>
 	</article>
 
-     <article-grid class="mt-3" :posts="relatedPosts"
+     <article-grid class="w-10/12 sm:w-9/12 mx-auto mt-3" :posts="relatedPosts"
 	 />
   </Layout>
 </template>

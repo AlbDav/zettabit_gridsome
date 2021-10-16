@@ -7,7 +7,7 @@
 
       <article-preview v-for="post in otherPosts" :key="post.id" :post="post" />
     </ClientOnly> -->
-     <article-grid class="mt-3" :posts="posts"
+     <article-grid class="w-10/12 sm:p-5 mx-auto mt-3" :posts="posts"
 	 />
   </Layout>
 </template>
@@ -80,10 +80,6 @@ export default {
         this.multiplePosts.length > this.carouselNum ? this.carouselNum : 1;
       return this.multiplePosts.slice(sliceNum);
     },
-  },
-  created() {
-    console.log(this.posts);
-	console.log(this.$search.search('Some c'));
   },
   components: {
     Carousel,
