@@ -24,9 +24,6 @@
 <script>
 export default {
   props: ["path", "title", "date", "image", "subtitle"],
-  created() {
-	  console.log(this.subtitle);
-  }
 };
 </script>
 

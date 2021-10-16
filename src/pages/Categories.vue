@@ -1,6 +1,9 @@
 <template>
   <Layout>
-    <article-grid class="w-10/12 sm:px-5 mx-auto my-5 article-grid" :posts="categories" />
+    <article-grid
+      class="w-10/12 sm:px-5 mx-auto my-5 article-grid"
+      :posts="categories"
+    />
   </Layout>
 </template>
 
@@ -44,14 +47,11 @@ export default {
   components: {
     ArticleGrid,
   },
-  created() {
-	  console.log(this.categories);
-  }
 };
 </script>
 
 <style scoped>
 .article-grid >>> h2 {
-	text-align: center;
+  text-align: center;
 }
 </style>

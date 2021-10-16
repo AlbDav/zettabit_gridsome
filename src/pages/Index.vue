@@ -1,14 +1,12 @@
 <template>
   <Layout>
-	  <main-article :post="topPosts[0]"
-	  />
-<!--     <ClientOnly>
+    <main-article :post="topPosts[0]" />
+    <!--     <ClientOnly>
       <carousel :topPosts="topPosts" :carouselNum="carouselNum" />
 
       <article-preview v-for="post in otherPosts" :key="post.id" :post="post" />
     </ClientOnly> -->
-     <article-grid class="w-10/12 sm:px-5 mx-auto my-5" :posts="posts"
-	 />
+    <article-grid class="w-10/12 sm:px-5 mx-auto my-5" :posts="posts" />
   </Layout>
 </template>
 
@@ -45,17 +43,17 @@ export default {
   computed: {
     posts() {
       if (this.$page.posts.edges) {
-        return this.$page.posts.edges.map(el => {
-			return {
-				id: el.node.id,
-				title: el.node.title,
-				date: el.node.date,
-				subtitle: el.node.subtitle,
-				path: el.node.path,
-				content: el.node.content,
-				image: el.node.image,
-			}
-		});
+        return this.$page.posts.edges.map((el) => {
+          return {
+            id: el.node.id,
+            title: el.node.title,
+            date: el.node.date,
+            subtitle: el.node.subtitle,
+            path: el.node.path,
+            content: el.node.content,
+            image: el.node.image,
+          };
+        });
       } else {
         return [];
       }
@@ -84,8 +82,8 @@ export default {
   components: {
     Carousel,
     ArticlePreview,
-	MainArticle,
-	ArticleGrid
+    MainArticle,
+    ArticleGrid,
   },
   metaInfo: {
     title: "View my blog posts",
