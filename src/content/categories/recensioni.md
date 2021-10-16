@@ -2,6 +2,6 @@
 id: recensioni
 path: recensioni 
 title: Recensioni
-description: prova
+subtitle: prova
 image: ./images/prova.jpg
 ---

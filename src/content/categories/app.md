@@ -2,6 +2,6 @@
 id: app
 path: app
 title: App
-description: 
+subtitle: 
 image: ./images/home.jpg
 ---
