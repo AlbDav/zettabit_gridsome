@@ -30,7 +30,7 @@
           >
             <h1>{{ post.title }}</h1>
             <time :datetime="post.date">{{ post.date }}</time>
-            <p>{{ post.summary }}</p>
+            <p>{{ post.sbtitle }}</p>
           </div>
         </g-link>
       </div>

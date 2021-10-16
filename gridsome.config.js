@@ -37,12 +37,12 @@ module.exports = {
 	{
 		use: 'gridsome-plugin-flexsearch',
 		options: {
-			searchFields: ['title', 'summary', 'content'],
+			searchFields: ['title', 'subtitle', 'content'],
 			collections: [
 				{
 					typeName: 'Post',
 					indexName: 'Post',
-					fields: ['title', 'summary']
+					fields: ['title', 'subtitle']
 				}
 			]
 		}

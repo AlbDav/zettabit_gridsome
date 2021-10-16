@@ -12,7 +12,7 @@
       </div>
       <div class="sm:col-span-1 col-span-3 flex flex-col min-h-0 min-w-0">
         <v-clamp autoresize :max-height="'100%'" class="flex-shrink mb-3 overflow-ellipsis overflow-hidden mx-1">
-          {{ currentPost.summary }}
+          {{ currentPost.subtitle }}
         </v-clamp>
         <div class="flex items-end justify-end">
           <g-link :to="currentPost.path" rel="bookmark" class="w-full">

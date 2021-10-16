@@ -7,7 +7,7 @@
       </div>
       <g-image :src="post.image" class="object-cover w-full h-96" />
       <div class="w-10/12 sm:w-9/12 mx-auto py-3">
-        <div class="italic">{{ post.summary }}</div>
+        <div class="italic">{{ post.subtitle }}</div>
         <div class="py-2" v-html="post.content" />
       </div>
     </article>
