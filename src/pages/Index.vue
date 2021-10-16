@@ -1,10 +1,12 @@
 <template>
   <Layout>
-    <ClientOnly>
+    <main-article :post="topPosts[0]" />
+    <!--     <ClientOnly>
       <carousel :topPosts="topPosts" :carouselNum="carouselNum" />
 
       <article-preview v-for="post in otherPosts" :key="post.id" :post="post" />
-    </ClientOnly>
+    </ClientOnly> -->
+    <article-grid class="w-10/12 sm:px-5 mx-auto my-5" :posts="posts" />
   </Layout>
 </template>
 
@@ -21,7 +23,7 @@ query Posts ($page: Int) {
         id
         title
         date (format: "D MMMM YYYY", locale: "it")
-        summary
+        subtitle
         path
         content
 		image
@@ -34,12 +36,24 @@ query Posts ($page: Int) {
 <script>
 import Carousel from "../components/Carousel.vue";
 import ArticlePreview from "../components/ArticlePreview.vue";
+import MainArticle from "../components/MainArticle.vue";
+import ArticleGrid from "../components/ArticleGrid.vue";
 
 export default {
   computed: {
     posts() {
       if (this.$page.posts.edges) {
-        return this.$page.posts.edges;
+        return this.$page.posts.edges.map((el) => {
+          return {
+            id: el.node.id,
+            title: el.node.title,
+            date: el.node.date,
+            subtitle: el.node.subtitle,
+            path: el.node.path,
+            content: el.node.content,
+            image: el.node.image,
+          };
+        });
       } else {
         return [];
       }
@@ -65,12 +79,11 @@ export default {
       return this.multiplePosts.slice(sliceNum);
     },
   },
-  created() {
-    console.log(this.posts);
-  },
   components: {
     Carousel,
     ArticlePreview,
+    MainArticle,
+    ArticleGrid,
   },
   metaInfo: {
     title: "View my blog posts",

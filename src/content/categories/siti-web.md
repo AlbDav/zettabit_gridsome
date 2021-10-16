@@ -2,6 +2,6 @@
 id: siti-web
 path: siti-web
 title: Siti Web
-description: hello
+subtitle: hello
 image: ./images/tech.jpg
 ---

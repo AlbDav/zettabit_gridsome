@@ -4,8 +4,10 @@
       <h1>Posts tagged {{ $page.tag.title }}</h1>
 
       <ul>
-        <li v-for="post in $page.tag.belongsTo.edges" :key="post.node.id" >
-          <h3><g-link :to="post.node.path">{{ post.node.title }}</g-link></h3>
+        <li v-for="post in $page.tag.belongsTo.edges" :key="post.node.id">
+          <h3>
+            <g-link :to="post.node.path">{{ post.node.title }}</g-link>
+          </h3>
           {{ post.node.date }}
         </li>
       </ul>
@@ -28,7 +30,7 @@ query Tag ($id: ID!, $page: Int) {
           ...on Post {
             title
             path
-            summary
+            subtitle
             tags {
               title
             }
@@ -44,8 +46,8 @@ query Tag ($id: ID!, $page: Int) {
 export default {
   metaInfo() {
     return {
-      title: `Tag: ${this.$page.tag.title}`
-    }
+      title: `Tag: ${this.$page.tag.title}`,
+    };
   },
-}
+};
 </script>

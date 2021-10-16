@@ -1,18 +1,21 @@
 <template>
   <Layout>
-    <article class="grid grid-cols-1 gap-3 rounded-xl mx-4 mt-1">
-      <div class="min-h-0 min-w-0 mx-1">
-        <h2 class="text-red-light">{{ $page.post.title }}</h2>
-        <time :datetime="$page.post.date">{{ $page.post.date }}</time>
+    <article>
+      <div class="w-10/12 sm:w-9/12 mx-auto pb-3">
+        <h1>{{ post.title }}</h1>
+        <time :datetime="post.date">{{ post.date }}</time>
       </div>
-      <div
-        class="mr-1 rounded-xl overflow-hidden shadow-md min-h-0 min-w-0 h-48 sm:h-96"
-      >
-        <g-image :src="$page.post.image" class="object-cover h-full w-full" />
+      <g-image :src="post.image" class="object-cover w-full h-96" />
+      <div class="w-10/12 sm:w-9/12 mx-auto py-3">
+        <div class="italic">{{ post.subtitle }}</div>
+        <div class="py-2" v-html="post.content" />
       </div>
-
-      <div class="mb-8 mx-1" id="article-area" v-html="$page.post.content" />
     </article>
+
+    <article-grid
+      class="w-10/12 sm:w-9/12 mx-auto my-3"
+      :posts="relatedPosts"
+    />
   </Layout>
 </template>
 
@@ -22,20 +25,39 @@ query Post ($path: String!) {
       id
       title
       date (format: "D MMMM YYYY", locale: "it")
-      summary
-      path
+      subtitle
       content
 	  image
+	  related {
+		  id
+		  title
+		  date (format: "D MMMM YYYY", locale: "it")
+		  subtitle
+		  path
+		  image
+	  }
   }
 }
 </page-query>
 
 <script>
-  export default {
+import ArticleGrid from "../components/ArticleGrid.vue";
+export default {
+  computed: {
+    post() {
+      return this.$page.post;
+    },
+    relatedPosts() {
+      return this.post.related.filter((el) => el.id !== this.post.id);
+    },
+  },
+  components: {
+    ArticleGrid,
+  },
   metaInfo() {
     return {
-      title: this.$page.post.title
-    }
-  }
-}
+      title: this.$page.post.title,
+    };
+  },
+};
 </script>

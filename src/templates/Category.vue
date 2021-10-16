@@ -24,7 +24,7 @@ query Category ($path: String!, $page: Int) {
               id
               title
               date (format: "D MMMM YYYY", locale: "it")
-              summary
+              subtitle
               path
               content
 		      image
@@ -77,12 +77,9 @@ export default {
   metaInfo: {
     title: "View my blog posts",
   },
-  created() {
-    console.log(this.$page.category);
-  },
   metaInfo() {
     return {
-      title: `Category: ${this.$page.category.title}`,
+      title: `Categoria: ${this.$page.category.title}`,
     };
   },
 };

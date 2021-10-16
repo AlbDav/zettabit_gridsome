@@ -34,6 +34,38 @@ module.exports = {
         typeName: 'Category',
         }
     },
+	{
+		use: 'gridsome-plugin-flexsearch',
+		options: {
+			searchFields: ['title', 'subtitle', 'content'],
+			collections: [
+				{
+					typeName: 'Post',
+					indexName: 'Post',
+					fields: ['title', 'subtitle']
+				}
+			]
+		}
+	},
+	{
+		use: "gridsome-plugin-recommender",
+		options: {
+		  enabled: true,
+		  typeName: 'Post',
+		  referenceTypeName: 'Post',
+		  field: 'content',
+		  referenceField: 'content',
+		  relatedFieldName: 'related',
+		  referenceRelatedFieldName: 'related',
+		  caseSensitive: false,
+		  minScore: 0.3,
+		  maxScore: 1,
+		  minRelations: 7,
+		  maxRelations: 7,
+		  fillWithRandom: true,
+		  debug: false
+		}
+	  }
   ],
   templates: {
     Post: '/posts/:path',
