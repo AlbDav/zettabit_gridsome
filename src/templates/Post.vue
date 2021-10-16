@@ -13,7 +13,7 @@
 		</div>
 	</article>
 
-     <article-grid class="w-10/12 sm:w-9/12 mx-auto mt-3" :posts="relatedPosts"
+     <article-grid class="w-10/12 sm:w-9/12 mx-auto my-3" :posts="relatedPosts"
 	 />
   </Layout>
 </template>
@@ -24,14 +24,14 @@ query Post ($path: String!) {
       id
       title
       date (format: "D MMMM YYYY", locale: "it")
-      summary
+      subtitle
       content
 	  image
 	  related {
 		  id
 		  title
 		  date (format: "D MMMM YYYY", locale: "it")
-		  summary
+		  subtitle
 		  path
 		  image
 	  }

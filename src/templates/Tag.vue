@@ -28,7 +28,7 @@ query Tag ($id: ID!, $page: Int) {
           ...on Post {
             title
             path
-            summary
+            subtitle
             tags {
               title
             }

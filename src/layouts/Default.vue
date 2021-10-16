@@ -5,7 +5,7 @@
 	              glass-effect">
         <g-link class="nav__link" to="/">
 		  <button>
-			  <span class="icon-zettabit text-red-700"></span>
+			  <span class="icon-zettabit"></span>
 		  </button>
 		</g-link>
         <g-link class="nav__link" to="/categories">

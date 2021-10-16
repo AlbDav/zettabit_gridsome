@@ -24,7 +24,7 @@ query Category ($path: String!, $page: Int) {
               id
               title
               date (format: "D MMMM YYYY", locale: "it")
-              summary
+              subtitle
               path
               content
 		      image

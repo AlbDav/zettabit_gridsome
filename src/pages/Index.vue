@@ -7,7 +7,7 @@
 
       <article-preview v-for="post in otherPosts" :key="post.id" :post="post" />
     </ClientOnly> -->
-     <article-grid class="w-10/12 sm:p-5 mx-auto mt-3" :posts="posts"
+     <article-grid class="w-10/12 sm:px-5 mx-auto my-5" :posts="posts"
 	 />
   </Layout>
 </template>
@@ -25,7 +25,7 @@ query Posts ($page: Int) {
         id
         title
         date (format: "D MMMM YYYY", locale: "it")
-        summary
+        subtitle
         path
         content
 		image
@@ -49,8 +49,8 @@ export default {
 			return {
 				id: el.node.id,
 				title: el.node.title,
-				date: el.node.title,
-				summary: el.node.summary,
+				date: el.node.date,
+				subtitle: el.node.subtitle,
 				path: el.node.path,
 				content: el.node.content,
 				image: el.node.image,
