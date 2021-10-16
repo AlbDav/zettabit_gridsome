@@ -47,6 +47,25 @@ module.exports = {
 			]
 		}
 	},
+	{
+		use: "gridsome-plugin-recommender",
+		options: {
+		  enabled: true,
+		  typeName: 'Post',
+		  referenceTypeName: 'Post',
+		  field: 'content',
+		  referenceField: 'content',
+		  relatedFieldName: 'related',
+		  referenceRelatedFieldName: 'related',
+		  caseSensitive: false,
+		  minScore: 0.3,
+		  maxScore: 1,
+		  minRelations: 7,
+		  maxRelations: 7,
+		  fillWithRandom: true,
+		  debug: false
+		}
+	  }
   ],
   templates: {
     Post: '/posts/:path',

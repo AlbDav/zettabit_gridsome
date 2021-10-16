@@ -41,8 +41,5 @@ query Categories ($page: Int) {
 
 <script>
 export default {
-  created() {
-    console.log(this.$page.categories);
-  },
 };
 </script>

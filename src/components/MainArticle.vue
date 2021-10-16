@@ -5,15 +5,15 @@
 		  	   class="z-10 w-10/12 sm:w-9/12 mx-auto
 		  			flex content-center
 					absolute right-0 left-0">
-			<g-link :to="post.node.path">
+			<g-link :to="post.path">
 				<div class="bg-white w-full sm:w-1/2 p-5 my-9 rounded-xl shadow-md main-card">
-  	    			<h1>{{ post.node.title }}</h1>
-  	    			<time :datetime="post.node.date">{{ post.node.date }}</time>
-					<p>{{ post.node.summary}}</p>
+  	    			<h1>{{ post.title }}</h1>
+  	    			<time :datetime="post.date">{{ post.date }}</time>
+					<p>{{ post.summary}}</p>
 				</div>
 			</g-link>
 		  </div>
-    	  <g-image :src="post.node.image" class="object-cover w-full"
+    	  <g-image :src="post.image" class="object-cover w-full"
 		  		   :style="{height: mainTitleHeight + 'px'}"
 		  />
 	  </div>
