@@ -3,12 +3,12 @@
     <article>
       <div class="w-10/12 sm:w-9/12 mx-auto pb-3">
         <h1>{{ post.title }}</h1>
-        <time :datetime="post.date">{{ post.date }}</time>
+        <time :datetime="post.date" class="text-sm">{{ post.date }}</time>
+        <p class="italic mt-1">{{ post.subtitle }}</p>
       </div>
       <g-image :src="post.image" class="object-cover w-full h-96" />
       <div class="w-10/12 sm:w-9/12 mx-auto py-3">
-        <div class="italic">{{ post.subtitle }}</div>
-        <div class="py-2" v-html="post.content" />
+        <div id="content" v-html="post.content" />
       </div>
     </article>
 
@@ -61,3 +61,13 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+#content img {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+#content p {
+  color: green;
+}
+</style
