@@ -1,0 +1,31 @@
+<template>
+  <Layout>
+    <main-article :post="posts[0]" />
+    <article-grid class="w-10/12 sm:px-5 mx-auto my-5" :posts="otherPosts" />
+  </Layout>
+</template>
+
+<script>
+import Carousel from "../components/Carousel.vue";
+import ArticlePreview from "../components/ArticlePreview.vue";
+import MainArticle from "../components/MainArticle.vue";
+import ArticleGrid from "../components/ArticleGrid.vue";
+
+export default {
+  props: ['posts'],
+  computed: {
+    otherPosts() {
+      return this.posts.slice(1);
+    },
+  },
+  components: {
+    Carousel,
+    ArticlePreview,
+    MainArticle,
+    ArticleGrid,
+  },
+  metaInfo: {
+    title: "View my blog posts",
+  },
+};
+</script>
