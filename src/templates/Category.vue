@@ -55,9 +55,6 @@ export default {
       }
     },
   },
-  mounted() {
-    console.log(this.posts);
-  },
   components: {
     AllArticles,
   },
