@@ -5,7 +5,7 @@ subtitle: Le nostre impressioni serie Apple TV+ basata sui romanzi di Isaac Asim
 image: ./images/Foundation_Photo_010102.jpg
 date: 2022-01-18
 categories: ['recensioni-serie-tv']
-tags: ['hello']
+tags: ['apple', 'apple tv+']
 ---
 
 Anno 12067 dell'Era Imperiale. Il matematico Hari Seldon (Jared Harris) ha previsto una caduta inevitabile dell'Impero. Come soluzione propone la creazione di un gruppo di persone che preparino le basi per poter ricostruire la società dopo il crollo: la Fondazione.
