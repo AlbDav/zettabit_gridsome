@@ -7,7 +7,7 @@
         <p class="italic mt-1 text-lg">{{ post.subtitle }}</p>
       </div>
       <g-image :src="post.image" class="object-cover w-full h-96" />
-      <div class="w-10/12 sm:w-7/12 mx-auto py-3">
+      <div class="w-10/12 sm:w-7/12 mx-auto">
         <div class="article-content text-lg" v-html="post.content" />
       </div>
     </article>
@@ -64,10 +64,16 @@ export default {
 
 <style scoped>
 .article-content >>> img {
-  @apply mx-auto;
-  @apply my-3;
+  @apply mt-3;
   @apply rounded-md;
   @apply shadow;
+}
+.article-content >>> img ~ em {
+  @apply text-sm;
+  @apply pl-1;
+  @apply ml-0.5;
+  @apply border-l-2;
+  @apply border-gray-600;
 }
 .article-content >>> p {
   @apply mt-3;
