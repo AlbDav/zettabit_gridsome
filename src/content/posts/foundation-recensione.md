@@ -12,7 +12,8 @@ Anno 12067 dell'Era Imperiale. Il matematico Hari Seldon (Jared Harris) ha previ
 
 Questa è la premessa della serie tv liberamente ispirata al Ciclo della Fondazione di Isaac Asimov, considerato un caposaldo della letteratura fantascientifica. La sua produzione era dunque un'impresa ardita, che a nostro avviso è più che riuscita.
 
-![La fotografia di Foundation] (./images/Foundation_Photo_010202.jpg)
+![Gaal Dornick (Lou Llobell) e Hari Seldon (Jared Harris) discutono del piano della Fondazione.] (./images/Foundation_Photo_010202.jpg)
+*Gaal Dornick (Lou Llobell) e Hari Seldon (Jared Harris) discutono del piano della Fondazione.*
 
 La fotografia, tratto di solito distintivo dei prodotti Apple TV+, si è rivelata ancora una volta ottima, con scelte dei colori e costruzioni delle scene molto curate.
 
@@ -24,4 +25,5 @@ Unica pecca in alcuni casi le immagini generate al computer, carenza già incont
 Apple aggiunge quindi un'altro ottimo prodotto al suo servizio di streaming, che sta piano piano diventando così sempre più competitivo.
 Per quanto riguarda il futuro della serie, il produttore David S. Goyer ha affermato di voler continuare lo sviluppo della serie per circa 80 episodi; non ci resta quindi che aspettare l'uscita della seconda stagione.
 
-![ placeholder ] (./images/Foundation_Photo_010110.jpg)
+![Salvor Hardin (Leah Harvey) mentre osserva la Volta.] (./images/Foundation_Photo_010110.jpg)
+*Salvor Hardin (Leah Harvey) mentre osserva la Volta.*
