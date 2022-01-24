@@ -28,3 +28,6 @@ Tra la prima e la seconda stagione sono inoltre usciti due episodi speciali, di 
 
 ![Poppy (Charlotte Nicdao), Ian (Rob McElhenney), Jo (Jessie Ennis), David (David Horsnby) e Brad (Danny Pudi) nell'episodio Quarantena] (./images/Mythic_Quest_Photo_011003.jpg)
 *Poppy (Charlotte Nicdao), Ian (Rob McElhenney), Jo (Jessie Ennis), David (David Horsnby) e Brad (Danny Pudi) nell'episodio 1x10: Quarantena*
+
+![Poppy (Charlotte Nicdao), Ian (Rob McElhenney), Jo (Jessie Ennis), David (David Horsnby) e Brad (Danny Pudi) nell'episodio Quarantena] (./images/IMG_8C75E271FF9E-1.jpeg)
+*Poppy (Charlotte Nicdao), Ian (Rob McElhenney), Jo (Jessie Ennis), David (David Horsnby) e Brad (Danny Pudi) nell'episodio 1x10: Quarantena*
