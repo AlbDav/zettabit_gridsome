@@ -82,8 +82,10 @@ export default {
 }
 .article-content >>> img ~ em {
   @apply text-sm;
+  @apply block;
   @apply pl-1;
-  @apply ml-0.5;
+  @apply mt-1;
+  @apply ml-1;
   @apply border-l-2;
   @apply border-gray-600;
 }
