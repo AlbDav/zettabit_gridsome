@@ -10,6 +10,7 @@ module.exports = {
   siteName: 'Zettabit',
   siteDescription: 'Zettabit, un semplice tech blog',
   siteUrl: 'https://zettabit.it',
+  titleTemplate: '%s',
   plugins: [
     {
       use: '@gridsome/source-filesystem',

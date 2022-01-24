@@ -4,7 +4,7 @@ title: Foundation - Recensione
 subtitle: Le nostre impressioni serie Apple TV+ basata sui romanzi di Isaac Asimov
 image: ./images/Foundation_Photo_010102.jpg
 date: 2022-01-18
-categories: ['recensioni-serie-tv']
+categories: ['serie-tv']
 tags: ['apple', 'apple tv+']
 ---
 
