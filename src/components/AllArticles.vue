@@ -20,8 +20,5 @@ export default {
     MainArticle,
     ArticleGrid,
   },
-  metaInfo: {
-    title: "View my blog posts",
-  },
 };
 </script>
