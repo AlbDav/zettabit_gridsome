@@ -47,6 +47,11 @@ export default {
   components: {
     ArticleGrid,
   },
+  metaInfo() {
+	  return {
+		  title: 'Categorie'
+	  }
+  }
 };
 </script>
 

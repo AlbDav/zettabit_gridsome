@@ -58,9 +58,6 @@ export default {
   components: {
     AllArticles,
   },
-  metaInfo: {
-    title: "View my blog posts",
-  },
   metaInfo() {
     return {
       title: `Categoria: ${this.$page.category.title}`,

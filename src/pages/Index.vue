@@ -53,8 +53,10 @@ export default {
   components: {
     AllArticles,
   },
-  metaInfo: {
-    title: "View my blog posts",
-  },
+  metaInfo() {
+	  return {
+		  title: 'Zettabit, un semplice tech blog'
+	  }
+  }
 };
 </script>
