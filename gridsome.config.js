@@ -20,11 +20,18 @@ module.exports = {
         refs: {
           tags: {
             typeName: 'Tag',
-			create: true
+            create: true
           },
-		  categories: {
-			  typeName: 'Category'
-		  }
+          categories: {
+            typeName: 'Category'
+          }
+        },
+        remark: {
+          plugins: [
+            ['@noxify/gridsome-plugin-remark-embed', {
+              'enabledProviders': ['Youtube', 'Twitter'],
+            }]
+          ]
         }
       }
     },
@@ -33,51 +40,51 @@ module.exports = {
       options: {
         path: 'src/content/categories/**/*.md',
         typeName: 'Category',
-        }
+      }
     },
-	{
-		use: 'gridsome-plugin-flexsearch',
-		options: {
-			searchFields: ['title', 'subtitle', 'content'],
-			collections: [
-				{
-					typeName: 'Post',
-					indexName: 'Post',
-					fields: ['title', 'subtitle']
-				}
-			]
-		}
-	},
-	{
-		use: "gridsome-plugin-recommender",
-		options: {
-		  enabled: true,
-		  typeName: 'Post',
-		  referenceTypeName: 'Post',
-		  field: 'content',
-		  referenceField: 'content',
-		  relatedFieldName: 'related',
-		  referenceRelatedFieldName: 'related',
-		  caseSensitive: false,
-		  minScore: 0.3,
-		  maxScore: 1,
-		  minRelations: 7,
-		  maxRelations: 7,
-		  fillWithRandom: true,
-		  debug: false
-		}
-	  }
+    {
+      use: 'gridsome-plugin-flexsearch',
+      options: {
+        searchFields: ['title', 'subtitle', 'content'],
+        collections: [
+          {
+            typeName: 'Post',
+            indexName: 'Post',
+            fields: ['title', 'subtitle']
+          }
+        ]
+      }
+    },
+    {
+      use: "gridsome-plugin-recommender",
+      options: {
+        enabled: true,
+        typeName: 'Post',
+        referenceTypeName: 'Post',
+        field: 'content',
+        referenceField: 'content',
+        relatedFieldName: 'related',
+        referenceRelatedFieldName: 'related',
+        caseSensitive: false,
+        minScore: 0.3,
+        maxScore: 1,
+        minRelations: 7,
+        maxRelations: 7,
+        fillWithRandom: true,
+        debug: false
+      }
+    }
   ],
   templates: {
     Post: '/posts/:path',
-	Category: '/categories/:path',
+    Category: '/categories/:path',
     Tag: '/tags/:id',
   },
   transformers: {
     remark: {
       autolinkClassName: 'icon icon-link heading-anchor',
       externalLinksTarget: '_blank',
-      externalLinksRel: ['noopener', ],
+      externalLinksRel: ['noopener',],
       anchorClassName: 'icon icon-link',
     }
   },

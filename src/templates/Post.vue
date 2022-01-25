@@ -71,11 +71,12 @@ export default {
 </script>
 
 <style scoped>
-.article-content >>> img {
+.article-content >>> img, .article-content >>> .youtube-embed {
   @apply mx-auto;
   @apply mt-3;
   @apply rounded-md;
   @apply shadow;
+  @apply w-full;
 }
 .article-content >>> img.portrait {
   @apply sm:w-1/2;
@@ -91,5 +92,11 @@ export default {
 }
 .article-content >>> p {
   @apply mt-3;
+}
+.article-content >>> .twitter-tweet {
+	@apply mx-auto;
+}
+.article-content >>> .youtube-embed {
+  overflow: hidden;
 }
 </style>
