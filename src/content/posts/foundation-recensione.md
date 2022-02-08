@@ -3,6 +3,7 @@ path: foundation-recensione
 title: Foundation - Recensione
 subtitle: Le nostre impressioni serie Apple TV+ basata sui romanzi di Isaac Asimov
 image: ./images/Foundation_Photo_010102.jpg
+alt: Gaal Dornick (Lou Llobell) in una scena di Foundation.
 date: 2022-01-18
 categories: ['serie-tv']
 tags: ['apple', 'apple tv+']

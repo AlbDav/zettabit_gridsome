@@ -6,7 +6,7 @@
         <time :datetime="post.date" class="text-sm">{{ post.date }}</time>
         <p class="italic mt-1 text-lg">{{ post.subtitle }}</p>
       </div>
-      <g-image :src="post.image" class="object-cover w-full h-96" />
+      <g-image :src="post.image" :alt="post.alt" class="object-cover w-full h-96" />
       <div class="w-10/12 sm:w-7/12 mx-auto">
         <div
           ref="articleContent"
@@ -32,6 +32,7 @@ query Post ($path: String!) {
       subtitle
       content
 	  image
+      alt
 	  tags {
 		id
 	  }

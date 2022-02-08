@@ -5,7 +5,7 @@
         class="nav mx-auto w-11/12 sm:w-10/12 shadow-lg rounded-xl glass-effect"
       >
         <g-link class="nav__link" to="/">
-          <button>
+          <button aria-label="Home">
             <span class="icon-zettabit"></span>
           </button>
         </g-link>
