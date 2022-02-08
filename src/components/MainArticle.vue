@@ -25,6 +25,7 @@
       </div>
       <g-image
         :src="post.image"
+		:alt="post.alt"
         class="object-cover w-full"
         :style="{ height: mainTitleHeight + 'px' }"
       />
