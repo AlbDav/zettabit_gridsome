@@ -32,6 +32,9 @@ query Post ($path: String!) {
       subtitle
       content
 	  image
+	  tags {
+		id
+	  }
 	  related {
 		  id
 		  title
@@ -80,14 +83,29 @@ export default {
       return t;
     })(document, "script", "twitter-wjs");
     twttr.ready(() => twttr.widgets.load());
+    console.log(this.$page.post.tags);
+    console.log(this.$page.post.image);
   },
   components: {
     ArticleGrid,
   },
   metaInfo() {
-    return {
+    return this.$seo({
       title: this.$page.post.title,
-    };
+      description: this.$page.post.subtitle,
+      keywords: this.$page.post.tags.map(el => el.id),
+      openGraph: {
+        title: this.$page.post.title,
+        image: {
+            url: 'https://zettabit.it/' + this.$page.post.image.src,
+        },
+        type: "website",
+      },
+      twitter: {
+        title: this.$page.post.title,
+        type: "summary",
+      },
+    });
   },
 };
 </script>
