@@ -7,6 +7,7 @@
       :title="post.title"
       :date="post.date"
       :image="post.image"
+	  :alt="post.alt"
       :subtitle="post.subtitle"
     />
   </div>
