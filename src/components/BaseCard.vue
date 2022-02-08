@@ -11,7 +11,7 @@
         base-card
       "
     >
-      <g-image :src="image" class="h-48 w-full object-cover" />
+      <g-image :src="image" :alt="alt" class="h-48 w-full object-cover" />
       <div class="p-4">
         <h2>{{ title }}</h2>
         <time class="text-sm" :datetime="date">{{ date }}</time>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  props: ["path", "title", "date", "image", "subtitle"],
+  props: ["path", "title", "date", "image", "alt", "subtitle"],
 };
 </script>
 

@@ -24,6 +24,7 @@ query Category ($path: String!, $page: Int) {
               path
               content
 		      image
+			  alt
           }
         }
       }

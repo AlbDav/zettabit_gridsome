@@ -3,6 +3,7 @@ path: mythic-quest-recensione
 title: Mythic Quest - Recensione
 subtitle: In attesa della terza stagione, ecco la nostra recensione di Mythic Quest, la serie comedy ambientata in uno studio di sviluppo di videogiochi
 image: ./images/Mythic_Quest_Photo_010101.jpg
+alt: Ian Grimm (Rob McElhenney) in una scena di Mythic Quest.
 date: 2022-01-25
 categories: ['serie-tv']
 tags: ['apple', 'apple tv+']

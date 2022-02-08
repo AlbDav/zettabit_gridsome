@@ -21,6 +21,7 @@ query Posts ($page: Int) {
         path
         content
 		image
+		alt
       }
     }
   }
@@ -43,6 +44,7 @@ export default {
             path: el.node.path,
             content: el.node.content,
             image: el.node.image,
+			alt: el.node.alt
           };
         });
       } else {

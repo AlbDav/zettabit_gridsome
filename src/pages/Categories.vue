@@ -16,6 +16,7 @@ query Categories ($page: Int) {
         title
 		subtitle
         image
+		alt
 		path
       }
     }
@@ -36,6 +37,7 @@ export default {
             title: el.node.title,
             subtitle: el.node.subtitle,
             image: el.node.image,
+			alt: el.node.alt,
             path: el.node.path,
           };
         });
