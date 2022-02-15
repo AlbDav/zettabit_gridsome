@@ -2,7 +2,7 @@
 path: keepa
 title: Keepa, l'app per tracciare lo storico dei prezzi su Amazon
 subtitle: L'offerta che hai davanti è veramente vantaggiosa? Puoi scoprirlo grazie a questa estensione del browser.
-image: ../images/Keepa_1.png
+image: ../../images/Keepa_1.png
 date: 2022-01-27
 categories: ['app']
 tags: ['amazon', 'offerte', 'estensioni', 'browser']
