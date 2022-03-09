@@ -132,7 +132,10 @@ export default {
   @apply border-l-2;
   @apply border-gray-600;
 }
-.article-content >>> p {
+.article-content >>> p,
+.article-content >>> h1,
+.article-content >>> h2,
+.article-content >>> h3 {
   @apply mt-3;
 }
 .article-content >>> .twitter-tweet {
