@@ -105,7 +105,7 @@ export default {
       twitter: {
         title: this.$page.post.title,
 		description: this.$page.post.subtitle,
-        type: "summary",
+        type: "summary_large_image",
 		image: 'https://zettabit.it' + this.$page.post.image.src
       },
     });
