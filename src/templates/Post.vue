@@ -98,13 +98,15 @@ export default {
       openGraph: {
         title: this.$page.post.title,
         image: {
-            url: 'https://zettabit.it/' + this.$page.post.image.src,
+            url: 'https://zettabit.it' + this.$page.post.image.src,
         },
         type: "website",
       },
       twitter: {
         title: this.$page.post.title,
+		description: this.$page.post.subtitle,
         type: "summary",
+		image: 'https://zettabit.it' + this.$page.post.image.src
       },
     });
   },
@@ -135,6 +137,13 @@ export default {
 .article-content >>> p {
   @apply mt-3;
 }
+
+.article-content >>> h1,
+.article-content >>> h2,
+.article-content >>> h3 {
+  @apply mt-4;
+}
+
 .article-content >>> .twitter-tweet {
   @apply mx-auto;
 }
