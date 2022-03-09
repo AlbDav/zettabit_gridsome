@@ -17,7 +17,7 @@
     </article>
 
     <article-grid
-      class="w-10/12 sm:w-9/12 mx-auto my-3"
+      class="w-10/12 sm:w-9/12 mx-auto mt-16 mb-3"
       :posts="relatedPosts"
     />
   </Layout>
