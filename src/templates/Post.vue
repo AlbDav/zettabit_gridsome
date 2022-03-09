@@ -98,13 +98,15 @@ export default {
       openGraph: {
         title: this.$page.post.title,
         image: {
-            url: 'https://zettabit.it/' + this.$page.post.image.src,
+            url: 'https://zettabit.it' + this.$page.post.image.src,
         },
         type: "website",
       },
       twitter: {
         title: this.$page.post.title,
+		description: this.$page.post.subtitle,
         type: "summary",
+		image: 'https://zettabit.it' + this.$page.post.image.src
       },
     });
   },
