@@ -33,6 +33,10 @@ query Post ($path: String!) {
       content
 	  image
       alt
+	  votes {
+		name
+		vote
+	  }
 	  tags {
 		id
 	  }
@@ -84,8 +88,6 @@ export default {
       return t;
     })(document, "script", "twitter-wjs");
     twttr.ready(() => twttr.widgets.load());
-    console.log(this.$page.post.tags);
-    console.log(this.$page.post.image);
   },
   components: {
     ArticleGrid,
