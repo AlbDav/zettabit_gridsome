@@ -1,6 +1,6 @@
 {
   "name": "zettabit_gridsome",
-  "version": "1.0.15",
+  "version": "1.0.17",
   "private": true,
   "scripts": {
     "develop": "gridsome develop",
@@ -16,7 +16,6 @@
     "gridsome-plugin-flexsearch": "^2.0.2",
     "gridsome-plugin-recommender": "^1.1.5",
     "gridsome-plugin-seo": "^1.0.2",
-    "vue-clamp": "^0.3.2",
     "vue-screen": "^1.5.4"
   },
   "devDependencies": {
