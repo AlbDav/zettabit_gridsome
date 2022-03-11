@@ -1,18 +1,16 @@
 <template>
   <article>
-    <div>
+    <div class="main-article-grid">
       <div
         ref="mainTitle"
         class="
-          z-10
           w-10/12
           sm:w-9/12
           mx-auto
           flex
-          content-center
-          absolute
-          right-0
-          left-0
+          items-center
+          main-article-title 
+          z-10
         "
       >
         <g-link :to="post.path" class="w-full sm:w-1/2">
@@ -23,12 +21,13 @@
           </div>
         </g-link>
       </div>
-      <g-image
-        :src="post.image"
-		:alt="post.alt"
-        class="object-cover w-full"
-        :style="{ height: mainTitleHeight + 'px' }"
-      />
+      <div class="w-full h-full main-article-image">
+        <g-image
+          :src="post.image"
+		      :alt="post.alt"
+          class="object-cover h-full w-full"
+        />
+      </div>
     </div>
   </article>
 </template>
@@ -36,24 +35,6 @@
 <script>
 export default {
   props: ["post"],
-  data() {
-    return {
-      mainTitleHeight: 0,
-    };
-  },
-  methods: {
-    setImageHeight() {
-      this.mainTitleHeight = this.$refs.mainTitle.clientHeight;
-    },
-  },
-  watch: {
-    "$screen.width"() {
-      this.setImageHeight();
-    },
-  },
-  mounted() {
-    this.setImageHeight();
-  },
 };
 </script>
 
@@ -62,5 +43,18 @@ export default {
   text-decoration: underline;
   text-decoration-color: theme("colors.red.700");
   text-decoration-thickness: 9%;
+}
+.main-article-grid {
+	display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: minmax(5rem, 10rem);
+}
+.main-article-title {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+.main-article-image {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
 }
 </style>
