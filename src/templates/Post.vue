@@ -63,31 +63,44 @@ export default {
       return this.post.related.filter((el) => el.id !== this.post.id);
     },
   },
+  methods: {
+    loadingScript() {
+      let images = this.$refs.articleContent.querySelectorAll("img");
+      images.forEach((img) => {
+        if (img.width < img.height) {
+          img.classList.add("portrait");
+        }
+      });
+      window.twttr = (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+          t._e.push(f);
+        };
+
+        return t;
+      })(document, "script", "twitter-wjs");
+      twttr.ready(() => twttr.widgets.load());
+    }
+  },
   mounted() {
-    let images = this.$refs.articleContent.querySelectorAll("img");
-    images.forEach((img) => {
-      if (img.width < img.height) {
-        img.classList.add("portrait");
-      }
-    });
-    window.twttr = (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-
-      t._e = [];
-      t.ready = function (f) {
-        t._e.push(f);
-      };
-
-      return t;
-    })(document, "script", "twitter-wjs");
-    twttr.ready(() => twttr.widgets.load());
+    this.loadingScript();
+  },
+  watch: {
+	  post: {
+		  handler() {
+        this.loadingScript();
+		  },
+      deep: true
+	  }
   },
   components: {
     ArticleGrid,
