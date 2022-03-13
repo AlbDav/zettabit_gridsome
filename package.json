@@ -16,7 +16,7 @@
     "gridsome-plugin-flexsearch": "^2.0.2",
     "gridsome-plugin-recommender": "^1.1.5",
     "gridsome-plugin-seo": "^1.0.2",
-    "vue-screen": "^1.5.4"
+    "vue-ellipse-progress": "^1.3.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.1.0",

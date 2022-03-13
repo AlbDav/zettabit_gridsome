@@ -13,6 +13,7 @@
           class="article-content text-lg"
           v-html="post.content"
         />
+        <article-ratings :ratings="post.ratings" />
       </div>
     </article>
 
@@ -33,9 +34,9 @@ query Post ($path: String!) {
       content
 	  image
       alt
-	  votes {
-		name
-		vote
+	  ratings {
+	  	name
+	  	rating
 	  }
 	  tags {
 		id
@@ -54,6 +55,7 @@ query Post ($path: String!) {
 
 <script>
 import ArticleGrid from "../components/ArticleGrid.vue";
+import ArticleRatings from "../components/ArticleRatings.vue";
 export default {
   computed: {
     post() {
@@ -104,6 +106,7 @@ export default {
   },
   components: {
     ArticleGrid,
+    ArticleRatings
   },
   metaInfo() {
     return this.$seo({
