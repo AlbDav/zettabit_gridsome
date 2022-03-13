@@ -10,6 +10,7 @@
 	  padding:0;
 	  line-height: 1.5;
 	  overflow-y: scroll;
+	  overflow-x: hidden;
 	  @apply bg-gray-50;
 	  @apply text-gray-800;
 	}

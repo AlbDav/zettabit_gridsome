@@ -3,10 +3,10 @@
 
 import DefaultLayout from '~/layouts/Default.vue';
 import './index.css';
-import VueScreen from 'vue-screen';
+import VueEllipseProgress from 'vue-ellipse-progress';
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
-  Vue.use(VueScreen, 'tailwind');
+  Vue.use(VueEllipseProgress);
 }

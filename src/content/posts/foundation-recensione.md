@@ -7,11 +7,11 @@ alt: Gaal Dornick (Lou Llobell) in una scena di Foundation.
 date: 2022-03-11
 categories: ['serie-tv']
 tags: ['apple', 'apple tv+']
-votes: [
-	{name: "Fotografia", vote: 9},
-	{name: "Sceneggiatura", vote: 9},
-	{name: "Colonna Sonora", vote: 8},
-	{name: "CGI", vote: 7},
+ratings: [
+	{name: "Fotografia", rating: "9.0"},
+	{name: "Sceneggiatura", rating: "9.0"},
+	{name: "Colonna Sonora", rating: "8.0"},
+	{name: "CGI", rating: "7.0"},
 ]
 ---
 
