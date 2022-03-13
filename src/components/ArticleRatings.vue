@@ -79,8 +79,8 @@ export default {
         start: 'center bottom',
         onEnter: () => {
           this.ratingsData.forEach(el => {
-            el.legendValue = el.rating;
-            el.progress = el.rating * 100 / 10
+            el.legendValue = Number(el.rating);
+            el.progress = Number(el.rating) * 100 / 10
           })
         }
       },

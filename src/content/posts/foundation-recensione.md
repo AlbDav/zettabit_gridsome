@@ -8,10 +8,10 @@ date: 2022-03-11
 categories: ['serie-tv']
 tags: ['apple', 'apple tv+']
 ratings: [
-	{name: "Fotografia", rating: 9},
-	{name: "Sceneggiatura", rating: 9},
-	{name: "Colonna Sonora", rating: 8},
-	{name: "CGI", rating: 7},
+	{name: "Fotografia", rating: "9.0"},
+	{name: "Sceneggiatura", rating: "9.0"},
+	{name: "Colonna Sonora", rating: "8.0"},
+	{name: "CGI", rating: "7.0"},
 ]
 ---
 
