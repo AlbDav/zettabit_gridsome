@@ -1,6 +1,6 @@
 {
   "name": "zettabit_gridsome",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "private": true,
   "scripts": {
     "develop": "gridsome develop",
