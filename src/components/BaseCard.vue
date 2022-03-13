@@ -13,7 +13,7 @@
     >
       <g-image :src="image" :alt="alt" class="h-48 w-full object-cover" />
       <div class="p-4">
-        <h2>{{ title }}</h2>
+        <h3>{{ title }}</h3>
         <time class="text-sm" :datetime="date">{{ date }}</time>
         <p class="pt-2">{{ subtitle }}</p>
       </div>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-.base-card:hover h2 {
+.base-card:hover h3 {
   text-decoration: underline;
   text-decoration-color: theme("colors.red.700");
   text-decoration-thickness: 9%;

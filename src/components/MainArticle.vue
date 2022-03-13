@@ -13,10 +13,10 @@
           z-10
         "
       >
-        <g-link :to="post.path" class="w-full sm:w-1/2">
+        <g-link :to="post.path" class="w-full sm:w-2/3">
           <div class="bg-white w-full p-5 my-9 rounded-xl shadow-md main-card">
-            <h1>{{ post.title }}</h1>
-            <time :datetime="post.date">{{ post.date }}</time>
+            <h2>{{ post.title }}</h2>
+            <time class="text-sm" :datetime="post.date">{{ post.date }}</time>
             <p>{{ post.subtitle }}</p>
           </div>
         </g-link>
@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.main-card:hover h1 {
+.main-card:hover h2 {
   text-decoration: underline;
   text-decoration-color: theme("colors.red.700");
   text-decoration-thickness: 9%;
