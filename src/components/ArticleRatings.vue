@@ -1,37 +1,39 @@
 <template>
   <div ref="ratingsContainer" class="mt-10">
-    <div class="w-full flex justify-center mb-3">
-      <div class="flex flex-col items-center">
-        <vue-ellipse-progress
-          :progress="finalRating.progress"
-          :legendValue="finalRating.legendValue"
-          :size="150"
-          color="#DC2626"
-          thickness="7%
-          "
-          legendClass="final-rating-legend"
-        />
-        <div class="w-full text-center font-bold text-lg">Voto complessivo</div>
-      </div>
-    </div>
-    <div class="flex flex-wrap justify-evenly">
-      <div
-        v-for="rating in ratingsData"
-        :key="rating.name"
-        class="flex flex-col items-center mx-2 my-2"
-      >
-        <vue-ellipse-progress
-          :progress="rating.progress"
-          :legendValue="rating.legendValue"
-          :size="100"
-          color="#DC2626"
-          thickness="7%
-          "
-          legendClass="rating-legend"
-        />
-        <div class="w-full text-center font-bold text-sm">{{ rating.name }}</div>
-      </div>
-    </div>
+    <ClientOnly>
+     <div class="w-full flex justify-center mb-3">
+       <div class="flex flex-col items-center">
+         <vue-ellipse-progress
+           :progress="finalRating.progress"
+           :legendValue="finalRating.legendValue"
+           :size="150"
+           color="#DC2626"
+           thickness="7%
+           "
+           legendClass="final-rating-legend"
+         />
+         <div class="w-full text-center font-bold text-lg">Voto complessivo</div>
+       </div>
+     </div>
+     <div class="flex flex-wrap justify-evenly">
+       <div
+         v-for="rating in ratingsData"
+         :key="rating.name"
+         class="flex flex-col items-center mx-2 my-2"
+       >
+         <vue-ellipse-progress
+           :progress="rating.progress"
+           :legendValue="rating.legendValue"
+           :size="100"
+           color="#DC2626"
+           thickness="7%
+           "
+           legendClass="rating-legend"
+         />
+         <div class="w-full text-center font-bold text-sm">{{ rating.name }}</div>
+       </div>
+     </div>
+    </ClientOnly>
   </div>
 </template>
 <script>
@@ -94,7 +96,7 @@ export default {
         }
       },
     })
-  }
+  },
 };
 </script>
 

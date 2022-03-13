@@ -3,10 +3,13 @@
 
 import DefaultLayout from '~/layouts/Default.vue';
 import './index.css';
-import VueEllipseProgress from 'vue-ellipse-progress';
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
-  Vue.use(VueEllipseProgress);
+  if (process.isClient) {
+    let VueEllipseProgress = require('vue-ellipse-progress');
+    console.log(VueEllipseProgress);
+    Vue.use(VueEllipseProgress);
+  }
 }
