@@ -16,6 +16,7 @@
     "gridsome-plugin-flexsearch": "^2.0.2",
     "gridsome-plugin-recommender": "^1.1.5",
     "gridsome-plugin-seo": "^1.0.2",
+    "gsap": "^3.9.1",
     "vue-ellipse-progress": "^1.3.1"
   },
   "devDependencies": {

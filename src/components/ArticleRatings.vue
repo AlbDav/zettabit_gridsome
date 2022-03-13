@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-10">
+  <div ref="ratingsContainer" class="mt-10">
     <div class="w-full flex justify-center mb-3">
       <div class="flex flex-col items-center">
         <vue-ellipse-progress
@@ -35,6 +35,9 @@
   </div>
 </template>
 <script>
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 export default {
   props: ["ratings"],
   data() {
@@ -63,12 +66,34 @@ export default {
         legendValue: 0
       }
     })
-    setTimeout(() => {
-      this.ratingsData.forEach(el => {
-        el.legendValue = el.rating;
-        el.progress = el.rating * 100 / 10
-      })
-    }, 3000)
+  },
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger)
+
+    const ratingsContainer = this.$refs.ratingsContainer;
+    console.log(ratingsContainer);
+
+    const ratingsTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: ratingsContainer,
+        start: 'center bottom',
+        onEnter: () => {
+          this.ratingsData.forEach(el => {
+            el.legendValue = el.rating;
+            el.progress = el.rating * 100 / 10
+          })
+        }
+      },
+    })
+
+    const refreshTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: ratingsContainer,
+        onEnter: () => {
+            ScrollTrigger.refresh();
+        }
+      },
+    })
   }
 };
 </script>
