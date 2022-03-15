@@ -13,7 +13,7 @@
           class="article-content text-lg"
           v-html="post.content"
         />
-        <article-ratings :ratings="post.ratings" />
+        <article-ratings v-if="post.ratings.length > 0" :ratings="post.ratings" />
       </div>
     </article>
 

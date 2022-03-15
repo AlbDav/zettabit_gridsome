@@ -47,7 +47,7 @@ export default {
 .main-article-grid {
 	display: grid;
   grid-template-columns: auto;
-  grid-auto-rows: minmax(5rem, 10rem);
+  grid-auto-rows: minmax(5rem, 12rem);
 }
 .main-article-title {
   grid-column: 1 / 3;
