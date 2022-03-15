@@ -4,9 +4,10 @@
       <div
         ref="mainTitle"
         class="
-          w-10/12
+          w-11/12
           sm:w-9/12
           mx-auto
+		  px-2
           flex
           items-center
           main-article-title 

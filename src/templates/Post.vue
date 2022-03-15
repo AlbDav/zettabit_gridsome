@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <article>
-      <div class="w-10/12 sm:w-7/12 mx-auto pb-3">
+      <div class="w-11/12 sm:w-7/12 mx-auto pb-3 px-2">
         <h1>{{ post.title }}</h1>
         <time :datetime="post.date" class="text-sm">{{ post.date }}</time>
         <p class="italic mt-1 text-lg">{{ post.subtitle }}</p>
@@ -11,7 +11,7 @@
         :alt="post.alt"
         class="object-cover w-full h-96"
       />
-      <div class="w-10/12 sm:w-7/12 mx-auto">
+      <div class="w-11/12 sm:w-7/12 mx-auto px-2">
         <div
           ref="articleContent"
           class="article-content text-lg"
@@ -25,7 +25,7 @@
     </article>
 
     <article-grid
-      class="w-10/12 sm:w-9/12 mx-auto mt-16 mb-3"
+      class="w-11/12 sm:w-9/12 mx-auto mt-16 mb-3 px-2"
       :posts="relatedPosts"
     />
   </Layout>

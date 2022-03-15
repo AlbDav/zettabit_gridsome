@@ -1,7 +1,7 @@
 <template>
   <div>
     <main-article :post="posts[0]" />
-    <article-grid class="w-10/12 sm:px-5 mx-auto my-5" :posts="otherPosts" />
+    <article-grid class="w-11/12 sm:px-5 mx-auto my-5 px-2" :posts="otherPosts" />
   </div>
 </template>
 
