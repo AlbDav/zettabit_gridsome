@@ -6,14 +6,21 @@
         <time :datetime="post.date" class="text-sm">{{ post.date }}</time>
         <p class="italic mt-1 text-lg">{{ post.subtitle }}</p>
       </div>
-      <g-image :src="post.image" :alt="post.alt" class="object-cover w-full h-96" />
+      <g-image
+        :src="post.image"
+        :alt="post.alt"
+        class="object-cover w-full h-96"
+      />
       <div class="w-10/12 sm:w-7/12 mx-auto">
         <div
           ref="articleContent"
           class="article-content text-lg"
           v-html="post.content"
         />
-        <article-ratings :ratings="post.ratings" />
+        <article-ratings
+          v-if="post.ratings.length > 0"
+          :ratings="post.ratings"
+        />
       </div>
     </article>
 
@@ -91,40 +98,40 @@ export default {
         return t;
       })(document, "script", "twitter-wjs");
       twttr.ready(() => twttr.widgets.load());
-    }
+    },
   },
   mounted() {
     this.loadingScript();
   },
   watch: {
-	  post: {
-		  handler() {
+    post: {
+      handler() {
         this.loadingScript();
-		  },
-      deep: true
-	  }
+      },
+      deep: true,
+    },
   },
   components: {
     ArticleGrid,
-    ArticleRatings
+    ArticleRatings,
   },
   metaInfo() {
     return this.$seo({
       title: this.$page.post.title,
       description: this.$page.post.subtitle,
-      keywords: this.$page.post.tags.map(el => el.id),
+      keywords: this.$page.post.tags.map((el) => el.id),
       openGraph: {
         title: this.$page.post.title,
         image: {
-            url: 'https://zettabit.it' + this.$page.post.image.src,
+          url: "https://zettabit.it" + this.$page.post.image.src,
         },
         type: "website",
       },
       twitter: {
         title: this.$page.post.title,
-		description: this.$page.post.subtitle,
+        description: this.$page.post.subtitle,
         type: "summary_large_image",
-		image: 'https://zettabit.it' + this.$page.post.image.src
+        image: "https://zettabit.it" + this.$page.post.image.src,
       },
     });
   },

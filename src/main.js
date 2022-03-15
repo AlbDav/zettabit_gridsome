@@ -9,7 +9,6 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   if (process.isClient) {
     let VueEllipseProgress = require('vue-ellipse-progress');
-    console.log(VueEllipseProgress);
     Vue.use(VueEllipseProgress);
   }
 }
