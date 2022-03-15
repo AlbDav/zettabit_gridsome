@@ -1,7 +1,10 @@
 <template>
   <div ref="ratingsContainer" class="mt-10">
+    <h3 class="text-center">
+      LA NOSTRA VALUTAZIONE
+    </h3>
     <ClientOnly>
-      <div class="w-full flex justify-center mb-3">
+      <div class="w-full flex justify-center my-4">
         <div class="flex flex-col items-center">
           <vue-ellipse-progress
             :progress="finalRating.progress"
@@ -12,7 +15,7 @@
            "
             legendClass="final-rating-legend"
           />
-          <div class="w-full text-center font-bold text-lg">
+          <div class="w-full text-center font-bold text-lg mt-1">
             Voto complessivo
           </div>
         </div>
@@ -32,7 +35,7 @@
            "
             legendClass="rating-legend"
           />
-          <div class="w-full text-center font-bold text-sm">
+          <div class="w-full text-center font-bold text-sm mt-1">
             {{ rating.name }}
           </div>
         </div>
