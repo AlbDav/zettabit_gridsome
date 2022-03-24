@@ -25,7 +25,7 @@ Questa è la premessa della serie TV liberamente ispirata al *Ciclo della Fondaz
 La **fotografia**, tratto di solito distintivo di Apple TV+, si è rivelata ancora una volta notevole, con scelte dei colori e costruzioni delle scene molto curate.
 
 La **narrazione** ha una struttura efficace e vengono esplorati vari avvenimenti collegati tra loro, in maniera equilibrata all'interno di ciascun episodio. I dialoghi sono ben ragionati e danno le giuste sfumature ai vari personaggi.
-La **colonna sonora** si adatta molto bene alla narrazione, contribuendo ad immergere ancora di più lo spettatore nel racconto.
+La **colonna sonora** si adatta molto bene alla narrazione, contribuendo a immergere ancora di più lo spettatore nel racconto.
 
 Unica pecca in alcuni casi sono **le immagini generate al computer**, carenza già riscontrata in altri film o serie TV Apple Original.
 

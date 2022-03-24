@@ -16,7 +16,7 @@ Ha poi presentato tutti i titoli **Apple Original** che entreranno a far parte d
 
 Infine ha presentato la vera novità per quanto riguarda Apple TV+: **Friday Night Baseball**. Grazie a questo servizio sarà infatti possibile guardare le partite della **Major League Baseball** del venerdì sera.
 
-Questo servizio sarà disponibile **dall'inizio della prossima stagione** in Stati Uniti, Canada, Australia, Brasile, Giappone, Mesico, Porto Rico, Corea del Sud e Regno Unito, ma come al solito verranno man mano aggiunti altri paesi. Almeno per un periodo iniziale **non ci sarà la necessità di un abbonamento aggiuntivo**.
+Questo servizio sarà disponibile **dall'inizio della prossima stagione** in Stati Uniti, Canada, Australia, Brasile, Giappone, Messico, Porto Rico, Corea del Sud e Regno Unito, ma come al solito verranno man mano aggiunti altri paesi. Almeno per un periodo iniziale **non ci sarà la necessità di un abbonamento aggiuntivo**.
 
 ![Il poster di presentazione di Friday Night Baseball.] (../../images/Apple-TV-plus-MLB-Friday-Night-Baseball-hero.jpg)
 *Il poster di presentazione di Friday Night Baseball.*
@@ -26,7 +26,7 @@ Per quanto riguarda iPhone 13 e 13 Pro sono state introdotte **due nuove coloraz
 
 È stata anche introdotta la **nuova linea di iPhone SE**, con un hardware rinnovato. I nuovi iPhone saranno infatti equipaggiati con i chip **A15 Bionic**, che permetteranno di eseguire operazioni intensive come il gaming, la realtà aumentata e il machine learning.
 
-iPhone SE sarà disponibile **dal 18 marzo** con ordinazioni a partire dall'11, e potrà essere acquistato in **3 versioni**: PRODUCT(RED), mignight e starlight, con un prezzo che parte da **529€** per il modello da **64GB**.
+iPhone SE sarà disponibile **dal 18 marzo** con ordinazioni a partire dall'11, e potrà essere acquistato in **3 versioni**: PRODUCT(RED), midnight e starlight, con un prezzo che parte da **529€** per il modello da **64GB**.
 
 Insieme agli iPhone è stato annunciato il rilascio di **iOS 15.4**, che includerà tra le altre cose lo sblocco tramite Face ID anche quando si indossa la **mascherina**, una **nuova voce** per Siri e l'aggiunta di nuove lingue per **Visual Lookup**.
 
@@ -56,7 +56,7 @@ In questo nuovo processore troviamo infatti **20-core CPU**, di cui 16 ad alte p
 ## Esperienza totalmente nuova per i Mac fissi: Mac Studio e Studio Display
 La grande novità di questo evento riguarda proprio i Mac fissi. Sono stati infatti introdotti due prodotti che ne rivoluzioneranno l'esperienza: **Mac Studio** e **Studio Display**.
 
-Grazie ai processori M1 (**Max** o **Ultra**), Mac Studio consentirà operazioni come il **rendering** di ambienti 3D molto complessi e la riproduzione di ben **18 tracce** video in formato **ProRes**. La **connettività** è un'altro punto di forza: si possono infatti trovare **sul retro** quattro porte Thunderbolt 4, una porta Ethernet, due porte USB-A, una porta HDMI e una entrata jack audio. **Davanti** troviamo invece due porte USC-C e uno slot per schede SD.
+Grazie ai processori M1 (**Max** o **Ultra**), Mac Studio consentirà operazioni come il **rendering** di ambienti 3D molto complessi e la riproduzione di ben **18 tracce** video in formato **ProRes**. La **connettività** è un altro punto di forza: si possono infatti trovare **sul retro** quattro porte Thunderbolt 4, una porta Ethernet, due porte USB-A, una porta HDMI e una entrata jack audio. **Davanti** troviamo invece due porte USC-C e uno slot per schede SD.
 
 Studio Display, con **27 pollici 5K** e una fotocamera da **12MP Ultra Wide**, è il compagno perfetto per questo Mac. Inoltre, grazie a un chip **A13 Bionic** è in grado di supportare **Center Stage**. Presenta anche il supporto per audio **Dolby Atmos** e tre porte Thunderblot 4, che possono essere utilizzare anche per la **ricarica rapida** di un Macbook Pro.
 
