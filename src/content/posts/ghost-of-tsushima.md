@@ -40,7 +40,7 @@ Per questo gioco, Sucker Punch ha avuto delle ottime idee che lo rendono **godib
 ![Jin che si appresta a compiere un'uccisione stealth.] (../../images/towtfurjgbucvoafbaq9.jpg)
 *Jin che si appresta a compiere un'uccisione stealth.*
 
-Il mondo è vasto e pieno di colori, dove avventurarsi in groppa al cavallo o fermarsi su altura o in un tempio è una **vera goduria per gli occhi**. Menzione d'onore al **soundtrack**, che mette perfettamente in risalto la natura del gioco e l'ambientazione.
+Il mondo è vasto e pieno di colori e avventurarsi in groppa al cavallo o fermarsi su altura o in un tempio è una **vera goduria per gli occhi**. Menzione d'onore al **soundtrack**, che mette perfettamente in risalto la natura del gioco e l'ambientazione.
 
 Ottimizzato il **DualSense** per PS5, con la **vibrazione aptica** mentre siamo a cavallo o dopo un colpo ben assestato e i **grilletti adattivi** quando scocchiamo le frecce, anche se in quest'ultimo caso non rende benissimo l'idea.
 
