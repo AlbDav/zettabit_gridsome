@@ -175,4 +175,10 @@ export default {
 .article-content >>> .youtube-embed {
   overflow: hidden;
 }
+
+.article-content >>> ul {
+	list-style: disc;
+	padding: revert;
+	margin: revert;
+}
 </style>
