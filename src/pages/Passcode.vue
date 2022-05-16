@@ -1,6 +1,17 @@
 <template>
     <div ref="backGroundContainer" class="h-screen flex justify-center items-center bg-gray-400">
         <div class="w-full md:w-1/3 mx-3">
+            <div class="text-5xl uppercase flex justify-center items-center my-3 text-center message-height">
+                <span v-if="codeEntered === 'right'" class="text-green-800">
+                    Accesso consentito
+                </span>
+                <span v-else-if="codeEntered === 'wrong'" class="text-red-800">
+                    Accesso negato
+                </span>
+                <span v-else>
+                    Inserire codice
+                </span>
+            </div>
             <div ref="digitsContainer" class="grid grid-cols-5 gap-4 mb-5">
                 <input type="text" v-for="digit in digits"
                     :key="digit.id"
@@ -29,7 +40,8 @@ export default {
                         id: el,
                         value: ''
                     }
-                })
+                }),
+            codeEntered: ''
         }
     },
     computed: {
@@ -45,8 +57,8 @@ export default {
                 });
                 return [...numberButtons,
                 {
-                    id: 'C',
-                    value: 'C',
+                    id: 'CANC',
+                    value: 'CANC',
                     click: (e) => this.removeNumber(e)
                 },
                 {
@@ -55,8 +67,8 @@ export default {
                     click: (e) => this.addNumber(e, '0')
                 },
                 {
-                    id: 'GO',
-                    value: 'GO',
+                    id: 'VAI',
+                    value: 'VAI',
                     click: (e) => this.checkCode(e)
                 },
             ]
@@ -68,8 +80,8 @@ export default {
             if (this.focusedInputIndex !== undefined) {
                 let digit = JSON.parse(JSON.stringify(this.digits[this.focusedInputIndex]));
                 digit.value = num;
-                console.log(digit);
                 this.$set(this.digits, this.focusedInputIndex, digit);
+                this.focusNext();
             }
         },
         removeNumber(e) {
@@ -96,11 +108,20 @@ export default {
             if (this.focusedInput) {
                 this.focusedInput.classList.remove('focused-input');
             }
-            let ref = this.getInputRef(i);
-            let el = this.$refs[ref];
-            this.focusedInput = el[0];
-            this.focusedInputIndex = i;
-            this.focusedInput.classList.add('focused-input');
+            if (i !== -1) {
+                let ref = this.getInputRef(i);
+                let el = this.$refs[ref];
+                this.focusedInput = el[0];
+                this.focusedInputIndex = i;
+                this.focusedInput.classList.add('focused-input');
+            } else {
+                this.focusedInput = undefined;
+                this.focusedInputIndex = undefined;
+            }
+        },
+        focusNext() {
+            let index = this.digits.findIndex(el => el.value === '');
+            this.setFocus(index);
         },
         clickEffect(button) {
             button.classList.add('button-shadow-active');
@@ -111,17 +132,24 @@ export default {
         wrongCode() {
             let container = this.$refs.digitsContainer;
             let backGround = this.$refs.backGroundContainer;
+            backGround.classList.remove('right-bg');
             container.classList.add('wrong-code');
             backGround.classList.add('wrong-bg');
+            this.codeEntered = 'wrong';
             setTimeout(() => {
                 container.classList.remove('wrong-code');
                 backGround.classList.remove('wrong-bg');
+                this.codeEntered = '';
             }, 1000);
         },
         rightCode() {
             let backGround = this.$refs.backGroundContainer;
             backGround.classList.add('right-bg');
+            this.codeEntered = 'right';
         }
+    },
+    mounted() {
+        this.focusNext();
     }
 }
 </script>
@@ -149,6 +177,9 @@ export default {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+}
+.message-height {
+    height: 2em;
 }
 
 @keyframes shake {
