@@ -12,7 +12,17 @@ Apple Fitness+ è il servizio di fitness lanciato da Apple alla **fine del 2020*
 
 Uno dei vantaggi principali dell'utilizzo di Apple Fitness+ è la **varietà di allenamenti disponibili**. Dall'allenamento a intervalli ad alta intensità (HIIT) allo yoga e al ciclismo, ce n'è per tutti i gusti, **indipendentemente dal livello di forma fisica**. Ogni allenamento è guidato da un **trainer certificato** che fornisce istruzioni chiare e incoraggiamento, aiutando gli utenti a ottenere il massimo.
 
-Apple Fitness+ è accessibile tramite l'**app Fitness** su iPhone, iPad o Apple TV. L'app è completamente integrata con l'**Apple Watch**, consentendo agli utenti di monitorare facilmente i loro allenamenti e i loro progressi. Il servizio offre anche consigli di allenamento personalizzati in base agli allenamenti precedenti.
+Apple Fitness+ è accessibile tramite l'**app Fitness** su iPhone, iPad o Apple TV. L'app è completamente integrata con l'**Apple Watch**, consentendo agli utenti di monitorare facilmente i loro allenamenti e i loro progressi.
+
+Oltre agli allenamenti indoor, Fitness+ offre anche la possibilità di allenarsi **all'aperto**, grazie alle funzionalità **Time to Walk** e **Time to Run**.
+
+Time to Walk è una nuova esperienza di **camminata audio** che comprende episodi originali con personaggi famosi (come **Stephen Fry**, **Naomi Campbell** o addirittura il **Principe William**) che condividono le loro storie, foto (che verranno mostrate sull'Apple Watch) e musica mentre camminano.
+
+Per quanto riguarda invece Time to Run, ogni episodio si concentra su **percorsi famosi** in luoghi iconici e include coaching e motivazione da parte di **allenatori professionisti**, oltre a playlist musicali curate dagli allenatori stessi. Anche in questo caso, durante la corsa verrano mostrate sull'Apple Watch delle **foto** scattate lungo il tragitto scelto.
+
+È possibile accedere a Time to Run e Time to Walk in **qualsiasi momento** e **ovunque** utilizzando l'Apple Watch e delle cuffie Bluetooth.
+
+Sono inoltre entrambi disponibili anche per le persone in **sedia a rotelle** con il nome di **Time to Push**.
 
 Apple Fitness+ ha diverse caratteristiche uniche che lo distinguono da altre app e servizi di fitness. La produzione **video di alta qualità** e la varietà di allenatori rendono l'esperienza di allenamento più coinvolgente e piacevole. Inoltre, si integra con **Apple Music**, consentendo agli utenti di accedere alle loro playlist preferite durante gli allenamenti.
 
@@ -20,7 +30,7 @@ Se confrontato con altre app e servizi di fitness popolari, come **Peloton** e *
 
 In conclusione, Apple Fitness+ è un modo comodo ed efficace per allenarsi a casa utilizzando i propri dispositivi Apple. Grazie all'ampia gamma di allenamenti e allenatori e alla perfetta integrazione con l'ecosistema Apple, è un **valido investimento** per chi vuole migliorare la propria forma fisica e il proprio benessere.
 
-Di seguito potete trovare la lista delle categorie disponibili su Apple Fitness+:
+Di seguito potete trovare la **lista delle categorie** disponibili su Apple Fitness+:
 - Meditazione
 - Allenamento cardio HIIT
 - Yoga
