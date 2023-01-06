@@ -15,7 +15,7 @@
         "
       >
         <g-link :to="post.path" class="w-full sm:w-2/3">
-          <div class="bg-white w-full p-5 my-9 rounded-xl shadow-md main-card">
+          <div class="bg-white w-full p-5 my-9 rounded-xl shadow-md hover:shadow-2xl transition-shadow main-card">
             <h2>{{ post.title }}</h2>
             <time class="text-sm" :datetime="post.date">{{ post.date }}</time>
             <p>{{ post.subtitle }}</p>
@@ -40,11 +40,6 @@ export default {
 </script>
 
 <style scoped>
-.main-card:hover h2 {
-  text-decoration: underline;
-  text-decoration-color: theme("colors.red.700");
-  text-decoration-thickness: 9%;
-}
 .main-article-grid {
 	display: grid;
   grid-template-columns: auto;
