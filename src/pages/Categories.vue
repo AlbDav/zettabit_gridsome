@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style scoped>
-.article-grid >>> h2, .article-grid >>> p {
+.article-grid >>> h2, .article-grid >>> h3, .article-grid >>> p {
   text-align: center;
 }
 </style>

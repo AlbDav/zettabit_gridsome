@@ -76,10 +76,18 @@ export default {
     loadingScript() {
       let images = this.$refs.articleContent.querySelectorAll("img");
       images.forEach((img) => {
-        if (img.width < img.height) {
-          img.classList.add("portrait");
-        }
+        const resizeObserver = new ResizeObserver((entries) => {
+          for (const entry of entries) {
+            let height = entry.contentRect.height;
+            let width = entry.contentRect.width;
+            if (width < height) {
+              img.classList.add("portrait");
+            }
+          }
+        });
+        resizeObserver.observe(img);
       });
+
       window.twttr = (function (d, s, id) {
         var js,
           fjs = d.getElementsByTagName(s)[0],
@@ -149,6 +157,7 @@ export default {
 }
 .article-content >>> img.portrait {
   @apply sm:w-1/2;
+  @apply mx-0
 }
 .article-content >>> img ~ em {
   @apply text-sm;
@@ -177,8 +186,8 @@ export default {
 }
 
 .article-content >>> ul {
-	list-style: disc;
-	padding: revert;
-	margin: revert;
+  list-style: disc;
+  padding: revert;
+  margin: revert;
 }
 </style>

@@ -4,6 +4,8 @@
       class="
         rounded-xl
         shadow-md
+		hover:shadow-2xl
+		transition-shadow
         bg-white
         w-full
         h-full
@@ -26,11 +28,3 @@ export default {
   props: ["path", "title", "date", "image", "alt", "subtitle"],
 };
 </script>
-
-<style scoped>
-.base-card:hover h3 {
-  text-decoration: underline;
-  text-decoration-color: theme("colors.red.700");
-  text-decoration-thickness: 9%;
-}
-</style>
