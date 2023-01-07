@@ -4,7 +4,7 @@ title: Trasformate i vostri allenamenti a casa con Apple Fitness+
 subtitle: Porta i tuoi allenamenti a un livello superiore con l'ampia gamma di esercizi e istruttori professionisti di Apple Fitness+.
 image: ../../images/Apple_fitness-plus-screens-appletv-ipadpro-applewatch-iphone11_09152020.jpg
 alt: Apple Fitness+ sui vari dispositivi Apple.
-date: 2022-04-05
+date: 2023-01-07
 categories: ['eventi']
 tags: ['apple', 'apple fitness', 'apple watch', 'fitness', 'ipad', 'iphone', 'apple tv']
 ---
