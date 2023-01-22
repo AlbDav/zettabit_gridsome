@@ -147,6 +147,9 @@ export default {
 </script>
 
 <style scoped>
+.article-content {
+	text-align: justify;
+}
 .article-content >>> img,
 .article-content >>> .youtube-embed {
   @apply mx-auto;
@@ -171,20 +174,17 @@ export default {
 .article-content >>> p {
   @apply mt-3;
 }
-
 .article-content >>> h1,
 .article-content >>> h2,
 .article-content >>> h3 {
   @apply mt-4;
 }
-
 .article-content >>> .twitter-tweet {
   @apply mx-auto;
 }
 .article-content >>> .youtube-embed {
   overflow: hidden;
 }
-
 .article-content >>> ul {
   list-style: disc;
   padding: revert;
