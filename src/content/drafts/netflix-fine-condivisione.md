@@ -1,35 +1,36 @@
 ---
 path: netflix-fine-condivisione
-title: Ghost of Tsushima, l'open world ambientato nel Giappone dei Samurai
+title: 'Netflix: Sharing is caring (beh, più o meno)'
 subtitle: In questo titolo targato Sucker Punch impersoneremo Jin Sakai e difenderemo l'isola di Tsushima dall'invasione mongola.
 image: ../../images/ar6fc.jpg
 alt: Jin Sakai in un artwork di Ghost of Tsushima.
 date: 2022-03-31
 categories: ['videogiochi']
 tags: ['sucker punch', 'sony', 'playstation', 'samurai', 'open world', 'videogiochi']
-ratings: [
-	{name: "Storia", rating: "8"},
-	{name: "Gameplay", rating: "8"},
-	{name: "Comparto Tecnico", rating: "8.7"}
-]
 ---
 
-Netflix: la fine degli account condivisi
+Netflix, il più grande servizio di streaming al mondo, consente agli utenti di condividere il proprio account con amici e familiari che vivono nello stesso luogo. Tuttavia, entro la fine di marzo, verranno introdotte alcune politiche per impedire la condivisione al di fuori del nucleo domestico. In questo articolo, daremo un'occhiata più da vicino alle nuove regole di condivisione dell'account di Netflix e a come gestirle.
 
-Sappiamo tutti come va, tu e i tuoi amici dividete il costo di un account Netflix per risparmiare qualche soldo. O forse i tuoi genitori sono stati così generosi da condividere i loro dati di accesso con te. Ma sembra che quei giorni siano finiti ora, poiché Netflix sta reprimendo gli account condivisi.
+## Posizione primaria e nuclei domestici
 
-Per anni, le persone hanno condiviso i propri account Netflix con amici, familiari e persino perfetti sconosciuti per risparmiare sull'abbonamento mensile. Non è raro vedere persone con più profili sui propri account, ciascuno appartenente a una persona diversa. In questo modo, ognuno può godersi i propri spettacoli e film, senza alcun conflitto.
+Stando a quanto affermato da Netflix, un account è pensato per essere condiviso con persone che vivono nella stessa casa (la posizione principale). Il servizio utilizza indirizzi IP, ID dispositivo e attività dell'account per determinare se un dispositivo fa parte della posizione principale. Per garantire che i dispositivi facciano parte della famiglia, gli utenti devono accedere e guardare Netflix sull'app o sul sito Web mentre sono connessi alla rete Wi-Fi domestica almeno una volta ogni 31 giorni.
 
-Tuttavia, poiché la popolarità di Netflix è salita alle stelle, la società si è resa conto che gli account condivisi costano loro un sacco di soldi. Si stima che gli account condivisi siano responsabili di miliardi di dollari di perdite di entrate per l'azienda ogni anno. Quindi, non sorprende che Netflix abbia deciso di porre fine a tutto ciò.
+## Modifica della posizione principale
 
-La nuova politica di Netflix mira a limitare il numero di profili che possono essere utilizzati su un singolo account. La società ha dichiarato che ogni account è pensato per "utente singolo, accesso domestico". Ciò significa che se condividi il tuo account con qualcuno, dovrai sborsare qualche soldo in più per un altro abbonamento.
+Gli utenti possono modificare la posizione principale del proprio account Netflix in qualsiasi momento. Quando la posizione principale cambia, ai dispositivi collegati alla vecchia posizione principale potrebbe essere impedito l'accesso a Netflix. Per continuare a far parte della famiglia, questi dispositivi devono connettersi alla rete Wi-Fi domestica nella nuova posizione principale.
 
-Anche se questa notizia potrebbe essere un peccato per coloro che hanno fatto affidamento su account condivisi, non è poi così male. Netflix ha lavorato duramente per rendere i suoi contenuti il ​​più accessibili possibile. L'azienda ha investito molto nel suo contenuto originale, che ora è disponibile in quasi tutti i paesi del mondo.
+## Verifica di un dispositivo
 
-Inoltre, Netflix ha anche iniziato a offrire abbonamenti solo per dispositivi mobili in alcuni paesi, che sono notevolmente più economici dell'abbonamento standard. Ciò rende più facile per le persone accedere a Netflix sui propri smartphone e tablet senza spendere una fortuna.
+Netflix potrebbe chiedere agli utenti di verificare un dispositivo se vi si accede dall'esterno del nucleo domestico in maniera ricorrente. Il processo prevede l'invio di un link all'indirizzo e-mail o al numero di telefono associato al titolare dell'account principale, che apre una pagina con un codice di verifica a 4 cifre. Il codice deve essere inserito entro 15 minuti e al termine della verifica il dispositivo può essere utilizzato per guardare Netflix. Questa verifica è temporanea e permette di accedere a Netflix per 7 giorni.
 
-Inoltre, l'azienda ha lavorato per migliorare il suo sistema di raccomandazioni, progettato per aiutarti a trovare programmi e film che ti piaceranno. Più usi Netflix, meglio riesce a capire le tue preferenze e a suggerire contenuti su misura per te.
+Se sei il titolare dell'account principale o vivi con il titolare dell'account principale, non è necessario verificare il tuo dispositivo per guardare Netflix mentre sei in viaggio o in un altro luogo. Tuttavia, se sei lontano da casa per un lungo periodo, Netflix potrebbe chiederti di verificare il tuo dispositivo di volta in volta.
 
-Quindi, mentre la fine degli account condivisi potrebbe essere un peccato per alcuni, non è solo una cattiva notizia. Netflix è ancora una delle migliori opzioni disponibili per lo streaming dei tuoi programmi e film preferiti. Con la sua libreria di contenuti in continua crescita e la sua attenzione a renderli accessibili a tutti, è ancora uno dei migliori investimenti che puoi fare per le tue esigenze di intrattenimento.
+## Trasferimento di un profilo a un nuovo account
 
-In conclusione, gli account condivisi potrebbero appartenere al passato, ma ciò non significa che Netflix non sia ancora un posto fantastico per guardare i tuoi programmi e film preferiti. Con la sua attenzione all'accessibilità, ai contenuti originali e al sistema di raccomandazione, Netflix è ancora il re del mondo dello streaming. Quindi, prendi il tuo account e preparati a fare binge-watch a tuo piacimento!
+Se quindi vi trovate al di fuori del nucleo domestico del titolare dell'account, dovrete crearvi il vostro account. Tuttavia, Netflix mette a disposizione una procedura per trasferire il proprio profilo idoneo a un nuovo account seguendo alcuni semplici passaggi. Una volta completato il trasferimento, il nuovo account sarà pronto per essere utilizzato e potrete ricominciare il vostro binge-watching da dove lo avevate interrotto.
+
+## Conclusione
+
+In conclusione, Netflix ha deciso di introdurre regole rigide in merito alla condivisione degli account. Tuttavia, offre diverse opzioni per garantire che gli utenti possano usufruire del servizio con i propri familiari, sia a casa che in viaggio. Inoltre permette di trasferire facilmente i propri dati su un nuovo account.
+
+Queste nuove politiche sono già entrate in vigore in alcuni paesi del mondo e la loro attivazione in Italia è prevista entro la fine del primo trimestre del 2023. Restate sintonizzati per ulteriori aggiornamenti.
