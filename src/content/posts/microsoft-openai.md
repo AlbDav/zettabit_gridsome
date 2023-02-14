@@ -1,6 +1,6 @@
 ---
 path: microsoft-openai
-title: La partnership tra OpenAI e Microsoft si espande per far progredire la ricerca sull'IA.
+title: La partnership tra OpenAI e Microsoft si rinnova.
 subtitle: Un investimento multimiliardario per promuovere un'IA sicura, utile e potente. [Immagine presa dal blog ufficiale di OpenAI]
 image: ../../images/openai-msft-twitter_7-21b.jpg
 alt: I loghi di Microsoft e OpenAI. Immagine presa dal blog ufficiale di OpenAI.
