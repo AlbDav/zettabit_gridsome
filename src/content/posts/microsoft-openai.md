@@ -4,7 +4,7 @@ title: La partnership tra OpenAI e Microsoft si espande per far progredire la ri
 subtitle: Un investimento multimiliardario per promuovere un'IA sicura, utile e potente. [Immagine presa dal blog ufficiale di OpenAI]
 image: ../../images/openai-msft-twitter_7-21b.jpg
 alt: I loghi di Microsoft e OpenAI. Immagine presa dal blog ufficiale di OpenAI.
-date: 2023-02-12
+date: 2023-02-14
 categories: ['ai']
 tags: ['OpenAI', 'Microsoft', 'AI', 'Partnership', 'Investment', 'Research', 'API', 'Azure', 'Supercomputing', 'GPT', 'DALL·E', 'Codex', 'GitHub Copilot', 'Microsoft Designer', 'ChatGPT', 'Responsible AI Standard', 'AI Alignment']
 ---
