@@ -3,9 +3,9 @@
   "version": "1.0.27",
   "private": true,
   "scripts": {
-    "develop": "NODE_OPTIONS=--openssl-legacy-provider && gridsome develop",
-    "explore": "NODE_OPTIONS=--openssl-legacy-provider && gridsome explore",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider && gridsome build"
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "build": "gridsome build"
   },
   "dependencies": {
     "@gridsome/plugin-sitemap": "^0.4.0",
