@@ -11,7 +11,7 @@ tags: ['OpenAI', 'GPT-4', 'NLP', 'AI', 'natural language processing', 'machine l
 
 OpenAI ha annunciato il rilascio di **GPT-4**, l'ultima versione del suo rivoluzionario modello di elaborazione del linguaggio naturale (**NLP**). GPT-4 rappresenta un enorme passo avanti, superando il suo predecessore, GPT-3, sotto diversi aspetti. Con il GPT-4, OpenAI intende spingere ancora una volta i confini di ciò che è possibile nell'intelligenza artificiale.
 
-Uno dei miglioramenti più significativi di GPT-4 è l'**aumento delle dimensioni**. Il modello ha **1000 miliardi** di parametri, molto di più rispetto al GPT-3, che ha 175 miliardi di parametri. Ciò significa che il GPT-4 è in grado di elaborare quantità di dati molto maggiori e di fornire **risposte più sofisticate**. Questo consente a GPT-4 di svolgere meglio compiti come la traduzione linguistica e la generazione di testo.
+Uno dei miglioramenti più significativi di GPT-4 è l'**aumento delle dimensioni**. Il modello dispone circa di **100.000 miliardi** di parametri, molto di più rispetto al GPT-3, che ha 175 miliardi di parametri. Ciò significa che il GPT-4 è in grado di elaborare quantità di dati molto maggiori e di fornire **risposte più sofisticate**. Questo consente a GPT-4 di svolgere meglio compiti come la traduzione linguistica e la generazione di testo.
 
 Oltre alle sue dimensioni, GPT-4 vanta anche **prestazioni impressionanti** nei benchmark tradizionali di apprendimento automatico. Il modello supera i modelli linguistici di grandi dimensioni esistenti e la maggior parte dei modelli all'avanguardia. GPT-4 si comporta bene anche nelle **lingue non inglesi**, superando GPT-3.5 e altri modelli su una suite di 14.000 problemi a scelta multipla tradotti in **24 delle 26 lingue testate**.
 
