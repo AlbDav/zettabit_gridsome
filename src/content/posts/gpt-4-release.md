@@ -1,7 +1,7 @@
 ---
 path: gpt-4-release
 title: OpenAI fa un enorme passo avanti introducendo GPT-4
-subtitle: GPT-4 stabilisce nuovi standard per l'NLP e l'IA con 10 trilioni di parametri, l'elaborazione degli input visivi e la funzione "steerability".
+subtitle: GPT-4 stabilisce nuovi standard per l'NLP e l'IA con 100.000 miliardi di parametri, l'elaborazione degli input visivi e la funzione "steerability".
 image: ../../images/gpt-4-release/gpt-4.png
 alt: "L'immagine di presentazione di GPT-4. [Immagine presa dal blog ufficiale di OpenAI. Crediti: Ruby Chen]"
 date: 2023-03-15
