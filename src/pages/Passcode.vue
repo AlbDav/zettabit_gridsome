@@ -95,7 +95,7 @@ export default {
         checkCode(e) {
             this.clickEffect(e.target);
             let code = this.digits.reduce((prev, curr) => prev + curr.value, '');
-            if (code !== '60815') {
+            if (code !== '97178') {
                 this.wrongCode();
             } else {
                 this.rightCode();
