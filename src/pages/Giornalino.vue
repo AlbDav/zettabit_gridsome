@@ -9,13 +9,15 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   created() {
-    fetch(
+    axios.get(
       "https://docs.google.com/spreadsheets/d/e/2PACX-1vTUxK916rIyFgupFClQyWklojWwgj-MC7_mEagknA9MjDXBBC_P7IbjL6F5tTuCq8mvUf5xYDIdTOzI/pub?gid=0&single=true&output=csv"
     )
-      .then((response) => response.text())
-      .then((csvText) => {
+      .then((response) => {
+		const csvText = response.data;
         const rows = csvText.split("\n").map((row) => row.split(","));
         let url = rows[0][0];
 		console.log(rows);
