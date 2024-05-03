@@ -16,6 +16,7 @@ jobs:
           node-version: '20.11.0'
       - run: npm cache clean --force
       - run: npm install
+      - run: npm update
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
