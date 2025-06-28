@@ -74,9 +74,9 @@ export default {
         console.log(firstRow);
 
         const secondRow = rows[1];
-        this.baseText = secondRow[0] || "";
-        this.successText = secondRow[1] || "";
-        this.failureText = secondRow[2] || "";
+        this.baseText = (secondRow[0] || "").trim();
+        this.successText = (secondRow[1] || "").trim();
+        this.failureText = (secondRow[2] || "").trim();
       })
       .catch((error) =>
         console.error("Errore nel caricamento dei dati:", error)
