@@ -3,16 +3,16 @@
         <div class="w-full md:w-1/3 mx-3">
             <div class="text-5xl uppercase flex justify-center items-center my-3 text-center message-height">
                 <span v-if="codeEntered === 'right'" class="text-green-800">
-                    Accesso consentito
+                    {{ successText }}
                 </span>
                 <span v-else-if="codeEntered === 'wrong'" class="text-red-800">
-                    Accesso negato
+                    {{ failureText }}
                 </span>
                 <span v-else>
-                    Inserire codice
+                    {{ baseText }}
                 </span>
             </div>
-            <div ref="digitsContainer" class="grid grid-cols-5 gap-4 mb-5">
+            <div ref="digitsContainer" class="grid gap-4 mb-5" :class="gridColsClass">
                 <input type="text" v-for="digit in digits"
                     :key="digit.id"
                     :ref="getInputRef(digit.id)"
@@ -30,49 +30,95 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
     data: () => {
         return {
             focusedInput: undefined,
             focusedInputIndex: undefined,
-            digits: [...Array(5).keys()].map(el => {
-                    return {
-                        id: el,
-                        value: ''
-                    }
-                }),
-            codeEntered: ''
+            digits: [],
+            codeEntered: '',
+            correctCode: '',
+            baseText: '',
+            successText: '',
+            failureText: '',
         }
     },
+	created() {
+		axios.get(
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vTUxK916rIyFgupFClQyWklojWwgj-MC7_mEagknA9MjDXBBC_P7IbjL6F5tTuCq8mvUf5xYDIdTOzI/pub?gid=1260062997&single=true&output=csv"
+    )
+      .then((response) => {
+        const csvText = response.data;
+        const rows = csvText.split("\n").map((row) => row.split(","));
+
+        const firstRow = rows[0];
+        const digits = [];
+        for (let cell of firstRow) {
+          const value = cell.trim();
+          if (value === "") break;
+          digits.push(value);
+        }
+        this.correctCode = digits.join("");
+        if (this.correctCode === "") {
+          this.correctCode = "0000";
+        }
+        this.digits = [...Array(this.correctCode.length).keys()].map(i => ({
+          id: i,
+          value: ''
+        }));
+        this.$nextTick(() => {
+          this.focusNext();
+        });
+        console.log(firstRow);
+
+        const secondRow = rows[1];
+        this.baseText = secondRow[0] || "";
+        this.successText = secondRow[1] || "";
+        this.failureText = secondRow[2] || "";
+      })
+      .catch((error) =>
+        console.error("Errore nel caricamento dei dati:", error)
+      );
+    },
     computed: {
-            buttons() {
-                let numberButtons = [...Array(9).keys()].map(el => {
-                    let num = el + 1
-                    num = num.toString()
-                    return {
-                        id: num,
-                        value: num,
-                        click: (e) => this.addNumber(e, num)
-                    }
-                });
-                return [...numberButtons,
-                {
-                    id: 'CANC',
-                    value: 'CANC',
-                    click: (e) => this.removeNumber(e)
-                },
-                {
-                    id: '0',
-                    value: '0',
-                    click: (e) => this.addNumber(e, '0')
-                },
-                {
-                    id: 'VAI',
-                    value: 'VAI',
-                    click: (e) => this.checkCode(e)
-                },
-            ]
-            }
+      buttons() {
+            let numberButtons = [...Array(9).keys()].map(el => {
+                let num = el + 1
+                num = num.toString()
+                return {
+                    id: num,
+                    value: num,
+                    click: (e) => this.addNumber(e, num)
+                }
+            });
+            return [...numberButtons,
+            {
+                id: 'CANC',
+                value: 'CANC',
+                click: (e) => this.removeNumber(e)
+            },
+            {
+                id: '0',
+                value: '0',
+                click: (e) => this.addNumber(e, '0')
+            },
+            {
+                id: 'VAI',
+                value: 'VAI',
+                click: (e) => this.checkCode(e)
+            },
+        ]
+      },
+      gridColsClass() {
+        const count = this.digits.length;
+        const maxCols = 12;
+
+        const safeCount = Math.min(count, maxCols);
+
+        return `grid-cols-${safeCount}`;
+      }
     },
     methods: {
         addNumber(e, num) {
@@ -95,7 +141,7 @@ export default {
         checkCode(e) {
             this.clickEffect(e.target);
             let code = this.digits.reduce((prev, curr) => prev + curr.value, '');
-            if (code !== '97178') {
+            if (code !== this.correctCode) {
                 this.wrongCode();
             } else {
                 this.rightCode();
@@ -148,9 +194,6 @@ export default {
             this.codeEntered = 'right';
         }
     },
-    mounted() {
-        this.focusNext();
-    }
 }
 </script>
 
