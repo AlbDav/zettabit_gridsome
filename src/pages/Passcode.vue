@@ -12,7 +12,8 @@
                     {{ baseText }}
                 </span>
             </div>
-            <div ref="digitsContainer" class="grid gap-4 mb-5" :class="gridColsClass">
+            <div ref="digitsContainer" class="grid gap-4 mb-5"
+              :style="{ gridTemplateColumns: digits.length <= 12 ? `repeat(${digits.length}, minmax(0, 1fr))` : '' }">
                 <input type="text" v-for="digit in digits"
                     :key="digit.id"
                     :ref="getInputRef(digit.id)"
@@ -110,14 +111,6 @@ export default {
                 click: (e) => this.checkCode(e)
             },
         ]
-      },
-      gridColsClass() {
-        const count = this.digits.length;
-        const maxCols = 12;
-
-        const safeCount = Math.min(count, maxCols);
-
-        return `grid-cols-${safeCount}`;
       }
     },
     methods: {
